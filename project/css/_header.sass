@@ -21,6 +21,22 @@ header
         justify-content: space-evenly
         flex: 1 1 auto
         margin-top: 1.3em
+        a
+            font-weight: 600
+            position: relative
+            &::before
+                content: ''
+                width: 100%
+                height: 7px
+                background-color: $blue
+                display: none
+                position: absolute
+                top: -5.5rem
+            &:hover
+                color: $blue
+                &::before
+                    display: block
+
 
 .tels
     display: flex
@@ -135,6 +151,8 @@ header
             background-color: white
             margin: 0 auto
             margin-top: -4px
+        .tabcontent 
+            display: none
     .prices_plans
         margin-top: 3.5rem
         margin-bottom: 7.5rem
@@ -163,7 +181,6 @@ header
                 font-size: 2.4rem
                 color: $blue
                 font-weight: bold
-
 
 .services
     color: black
@@ -354,7 +371,7 @@ header
     color: black
     font-size: 1.4rem
     padding-top: 5rem
-    margin-bottom: 12rem
+    margin-bottom: 9rem
     a
         color: black
         font-weight: 600
@@ -382,3 +399,62 @@ header
             margin-bottom: 4rem
         a
             margin-right: 2rem
+
+.modal
+    max-width: 139rem
+    color: black
+    padding: 0
+    .modal_inner
+        padding: 4.5rem
+    .modal_inner_text
+        width: 50%
+        font-size: 1.4rem
+        .modal_inner_text_title
+            font-size: 2.2rem
+            margin-bottom: 4rem
+        .works_item_info
+            margin-bottom: 5rem
+            .works_item_parametrs
+                margin-right: 2rem
+    .modal_inner_pics
+        margin: 0 0 0 auto
+        .modal_inner_pic
+            width: 100%
+            margin-bottom: 2.4rem
+            img
+                width: 48.5rem
+        .modal_inner_pics_min
+            flex-wrap: wrap
+            img
+                margin: auto
+                width: 11.5rem
+                height: 11.5rem
+                object-fit: cover
+    .modal_form
+        background-color: #4399e1
+        padding: 4.5rem
+        color: white
+        justify-content: space-between;
+        .modal_form_text_title
+            font-size: 2.4rem
+            font-weight: 600
+        p
+            font-size: 1.6rem
+        .topline
+            &::before
+                margin: 1rem 0
+        .modal_form_inputs
+            display: flex
+            flex-direction: column
+            input
+                width: 450px
+                height: 58px
+                border-radius: 29px;
+                padding: 2.5rem
+                border: none
+                &:nth-child(1)
+                    margin-bottom: 1.4rem
+        button
+            padding: 2.5rem 10rem
+            margin-bottom: 2.7rem
+                    

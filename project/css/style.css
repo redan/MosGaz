@@ -257,6 +257,10 @@ body .footer {
   color: #47AAFB;
 }
 
+.golden {
+  color: #fecc4b;
+}
+
 .center_button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -276,6 +280,10 @@ body .footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+input:focus, input:active, textarea:focus, textarea:active {
+  outline: none;
 }
 
 .bg_container {
@@ -466,6 +474,29 @@ header {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   margin-top: 1.3em;
+}
+
+.header_block .navigation a {
+  font-weight: 600;
+  position: relative;
+}
+
+.header_block .navigation a::before {
+  content: '';
+  width: 100%;
+  height: 7px;
+  background-color: #47AAFB;
+  display: none;
+  position: absolute;
+  top: -5.5rem;
+}
+
+.header_block .navigation a:hover {
+  color: #47AAFB;
+}
+
+.header_block .navigation a:hover::before {
+  display: block;
 }
 
 .tels {
@@ -661,6 +692,10 @@ header {
   background-color: white;
   margin: 0 auto;
   margin-top: -4px;
+}
+
+.prices .topline_white .tabcontent {
+  display: none;
 }
 
 .prices .prices_plans {
@@ -1001,7 +1036,7 @@ header {
   color: black;
   font-size: 1.4rem;
   padding-top: 5rem;
-  margin-bottom: 12rem;
+  margin-bottom: 9rem;
 }
 
 .footer a {
@@ -1046,5 +1081,108 @@ header {
 
 .footer .schedule a {
   margin-right: 2rem;
+}
+
+.modal {
+  max-width: 139rem;
+  color: black;
+  padding: 0;
+}
+
+.modal .modal_inner {
+  padding: 4.5rem;
+}
+
+.modal .modal_inner_text {
+  width: 50%;
+  font-size: 1.4rem;
+}
+
+.modal .modal_inner_text .modal_inner_text_title {
+  font-size: 2.2rem;
+  margin-bottom: 4rem;
+}
+
+.modal .modal_inner_text .works_item_info {
+  margin-bottom: 5rem;
+}
+
+.modal .modal_inner_text .works_item_info .works_item_parametrs {
+  margin-right: 2rem;
+}
+
+.modal .modal_inner_pics {
+  margin: 0 0 0 auto;
+}
+
+.modal .modal_inner_pics .modal_inner_pic {
+  width: 100%;
+  margin-bottom: 2.4rem;
+}
+
+.modal .modal_inner_pics .modal_inner_pic img {
+  width: 48.5rem;
+}
+
+.modal .modal_inner_pics .modal_inner_pics_min {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal .modal_inner_pics .modal_inner_pics_min img {
+  margin: auto;
+  width: 11.5rem;
+  height: 11.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.modal .modal_form {
+  background-color: #4399e1;
+  padding: 4.5rem;
+  color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal .modal_form .modal_form_text_title {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.modal .modal_form p {
+  font-size: 1.6rem;
+}
+
+.modal .modal_form .topline::before {
+  margin: 1rem 0;
+}
+
+.modal .modal_form .modal_form_inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal .modal_form .modal_form_inputs input {
+  width: 450px;
+  height: 58px;
+  border-radius: 29px;
+  padding: 2.5rem;
+  border: none;
+}
+
+.modal .modal_form .modal_form_inputs input:nth-child(1) {
+  margin-bottom: 1.4rem;
+}
+
+.modal .modal_form button {
+  padding: 2.5rem 10rem;
+  margin-bottom: 2.7rem;
 }
 /*# sourceMappingURL=style.css.map */
