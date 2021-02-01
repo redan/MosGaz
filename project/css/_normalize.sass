@@ -1,0 +1,149 @@
+a
+  font-weight: 500
+  font-size: 1.6rem
+  text-decoration: none
+  color: white
+  outline: none
+
+.wrapper
+  max-width: 1600px
+  margin: 0 auto
+  +respond-to(laptop)
+    max-width: 1200px
+    margin: 0 auto
+  +respond-to(tablet)
+    max-width: 900px
+    margin: 0 auto
+  +respond-to(pablet)
+    max-width: 720px
+    margin: 0 auto
+  +respond-to(mobile)
+    max-width: 290px
+    margin: 0 auto
+
+html
+  box-sizing: border-box
+*, *:before,*:after
+  box-sizing: inherit
+
+body, html
+  font-family: 'Montserrat', sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 10px
+  line-height: normal
+  //line-height: 2em
+  color: white
+  min-height: 100vh
+  // +respond-to(tablet)
+  //   font-size: 14px
+  // +respond-to(pablet)
+  //   font-size: 14px
+  // +respond-to(mobile)
+  //   font-size: 14px
+
+h1
+  font-size: 3.6rem
+  letter-spacing: -1px
+  +respond-to(pablet)
+    font-size: 2em
+
+h2
+  font-size: 2.6em
+  font-weight: bold
+  +respond-to(mobile)
+    font-size: 1.25em
+
+h3
+  font-size: 2em
+  font-weight: bold
+  +respond-to(tablet)
+    font-size: 1.25em
+  +respond-to(mobile)
+    font-weight: 900
+    font-size: 1em
+    //line-height: 1.25em
+
+h4
+  font-size: 1.3em
+  font-weight: 400
+  +respond-to(tablet)
+    font-size: 1em
+
+button
+  font-size: 2rem
+  padding: 2.5rem 4rem
+  cursor: pointer
+  text-decoration: none
+  border: none
+  background-color: transparent
+  text-align: center
+  color: white
+  transition: all .5s
+  border-radius: 5rem
+  border: 2px solid $blue
+  &.colored
+    background: $blue
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1)
+    &:hover
+      border: 2px solid $yellow
+      background: $yellow
+      //color: $blue
+  &.yellow
+    background: $yellow
+    &:hover
+      padding: 2.4rem 3.7rem
+      border: 3px solid $yellow
+      background: $blue
+  &.bordered
+    border: 2px solid $blue
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.06)), drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1))
+    transition: .5s
+    &:hover
+      background: $blue
+  &:focus,&:active,&:hover
+    outline: none
+
+body
+  display: flex
+  flex-direction: column
+  .footer
+    margin-top: auto
+
+.topline
+  &::before
+    content: ""
+    display: block
+    width: 3em
+    height: 7px
+    background-color: $blue
+    margin: 2em 0
+
+.topline_center
+  &::before
+    content: ""
+    display: block
+    width: 6.7rem
+    height: 7px
+    background-color: $blue
+    margin: 2em auto
+
+.toplineWhite
+  &::before
+    background-color: white
+
+.d-flex
+  display: flex
+
+.blue
+  color: $blue
+
+.center_button
+  display: flex
+  justify-content: center
+
+.aline-base
+  align-items: baseline
+
+.justify-sb
+  justify-content: space-between
