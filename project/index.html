@@ -18,7 +18,7 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 <body>
     <header>
         <div class="header_img">
-            <div class="promo_sl" style="background-image: url('../img/promo_bg/гл баннер@1X.png');"></div>
+            <div class="promo_sl" style="background-image: url('img/promo_bg/гл баннер@1X.png');"></div>
         </div>
         <div class="wrapper header_block d-flex">
             <div class="logo">
@@ -270,11 +270,13 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
             <h3>Цены</h3>
             <div class="prices_title_area d-flex">
                 <p>Выберете прлощадь:</p>
-                <button class="area_button tablinks active" onclick="openTab(event, '100')" id="defaultOpen">100 м<sup>2</sup></button>
-                <button class="area_button tablinks" onclick="openTab(event, '200')">200 м<sup>2</sup></button>
-                <button class="area_button tablinks" onclick="openTab(event, '300')">300 м<sup>2</sup></button>
+                <button class="area_button tablinks active" onclick="openTab(event, '100', 'to100')" id="defaultOpen">100 м<sup>2</sup></button>
+                <button class="area_button tablinks" onclick="openTab(event, '200', 'to200')">200 м<sup>2</sup></button>
+                <button class="area_button tablinks" onclick="openTab(event, '300', 'to300')">300 м<sup>2</sup></button>
             </div>
-            <p class="prices_title_text_min">* В расчетах заложено отопление площадью до 100 м<sup>2</sup></p>
+            <p class="prices_title_text_min tabdescriptor" id="to100">* В расчетах заложено отопление площадью до 100 м<sup>2</sup></p>
+            <p class="prices_title_text_min tabdescriptor" id="to200">* В расчетах заложено отопление площадью до 200 м<sup>2</sup></p>
+            <p class="prices_title_text_min tabdescriptor" id="to300">* В расчетах заложено отопление площадью до 300 м<sup>2</sup></p>
         </div>
         <div class="wrapper topline_white">
             <div class="prices_plans d-flex tabcontent" id="100">
