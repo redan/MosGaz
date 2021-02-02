@@ -81,18 +81,25 @@ button
   color: white
   transition: all .5s
   border-radius: 5rem
-  border: 2px solid $blue
+  // border: 2px solid $blue
   &.colored
     background: $blue
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1)
     &:hover
-      border: 2px solid $yellow
+      //border: 2px solid $yellow
       background: $yellow
       //color: $blue
   &.yellow
     background: $yellow
     &:hover
-      padding: 2.4rem 3.7rem
+      //padding: 2.4rem 3.7rem
+      //border: 3px solid $yellow
+      background: $blue
+  &.yellow_on_blue
+    background: $yellow
+    border: 3px solid $yellow
+    &:hover
+      //padding: 2.2rem 3.5rem
       border: 3px solid $yellow
       background: $blue
   &.bordered
@@ -114,10 +121,10 @@ body
   &::before
     content: ""
     display: block
-    width: 3em
+    width: 6.7rem
     height: 7px
     background-color: $blue
-    margin: 2em 0
+    margin: 2rem 0
 
 .topline_center
   &::before
@@ -126,7 +133,7 @@ body
     width: 6.7rem
     height: 7px
     background-color: $blue
-    margin: 2em auto
+    margin: 2rem auto
 
 .toplineWhite
   &::before

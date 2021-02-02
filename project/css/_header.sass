@@ -1,6 +1,12 @@
-header
+.header_index
     font-size: 1.6rem
     height: 855px
+
+.header
+    font-size: 1.6rem
+    box-shadow: 0px 5px 20px 10px rgba(34, 60, 80, 0.1)
+    a
+        color: black
 
 .header_img
     position: absolute
@@ -16,6 +22,8 @@ header
 .header_block
     align-items: center
     justify-content: space-between
+    padding-top: 2rem
+    padding-bottom: 3rem
     .navigation
         display: flex
         justify-content: space-evenly
@@ -60,6 +68,9 @@ header
         right: 5em
     .promo_info
         max-width: 50rem
+        display: none
+    .current
+        display: block
         p
             margin-bottom: 5.5rem
 
@@ -191,14 +202,8 @@ header
     h3
         font-size: 2.4rem
         margin-bottom: 1.3rem
-    .topline
-        &::before
-            width: 6.7rem
-            height: 7px
-            background-color: $blue
-            margin: 3rem auto
-        img
-            border-radius: 110rem
+    img
+        border-radius: 110rem
     .services_inner
         justify-content: space-around
         padding-top: 3.2rem
@@ -457,4 +462,28 @@ header
         button
             padding: 2.5rem 10rem
             margin-bottom: 2.7rem
-                    
+
+
+.services_page
+    color: black
+    font-size: 1.6rem
+    padding-top: 12rem
+    .services_title
+        padding-bottom: 4rem
+        border-bottom: 1px solid #d0d0d0
+    .services_title_sidebar
+        margin-top: -3rem
+        flex-basis: 50rem
+        h3
+            float: left
+    .services_title_main
+        align-items: center
+        justify-content: space-between
+        width: 100%
+    .services_main
+        margin-top: 5.7rem
+    .services_main_sidebar
+        margin-top: -3rem
+        flex-basis: 50rem
+    .services_main_info
+        width: 100%
