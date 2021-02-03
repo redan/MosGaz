@@ -830,8 +830,6 @@ input:focus, input:active, textarea:focus, textarea:active {
   display: flex;
   width: 100%;
   font-size: 1.6rem;
-  -webkit-box-shadow: 0px 4px 34.7px 0.4px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 4px 34.7px 0.4px rgba(0, 0, 0, 0.1);
 }
 
 .form .form_full h3 {
@@ -1053,6 +1051,8 @@ input:focus, input:active, textarea:focus, textarea:active {
   font-size: 1.4rem;
   padding-top: 5rem;
   margin-bottom: 9rem;
+  -webkit-box-shadow: inset 0px 40px 47px -30px rgba(34, 60, 80, 0.17);
+          box-shadow: inset 0px 40px 47px -30px rgba(34, 60, 80, 0.17);
 }
 
 .footer a {
@@ -1206,6 +1206,12 @@ input:focus, input:active, textarea:focus, textarea:active {
   color: black;
   font-size: 1.6rem;
   padding-top: 12rem;
+  padding-bottom: 9.6rem;
+}
+
+.services_page button {
+  -webkit-box-shadow: 0 15px 25px 0px rgba(34, 60, 80, 0.17);
+          box-shadow: 0 15px 25px 0px rgba(34, 60, 80, 0.17);
 }
 
 .services_page .services_title {
@@ -1235,15 +1241,178 @@ input:focus, input:active, textarea:focus, textarea:active {
 
 .services_page .services_main {
   margin-top: 5.7rem;
+  line-height: 2.4rem;
 }
 
 .services_page .services_main_sidebar {
-  margin-top: -3rem;
   -ms-flex-preferred-size: 50rem;
       flex-basis: 50rem;
 }
 
+.services_page .services_main_sidebar .services_sidebar_item {
+  font-weight: 600;
+  position: relative;
+}
+
+.services_page .services_main_sidebar .services_sidebar_item:hover {
+  cursor: pointer;
+  color: #2d93e6;
+}
+
+.services_page .services_main_sidebar .services_sidebar_item_list {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 5rem;
+}
+
+.services_page .services_main_sidebar .services_sidebar_item_list.open {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  border-bottom: 1px solid #d0d0d0;
+  border-top: 1px solid #d0d0d0;
+}
+
+.services_page .services_main_sidebar .sidebar_list_span {
+  position: relative;
+}
+
+.services_page .services_main_sidebar .sidebar_list_span:hover {
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.services_page .services_main_sidebar .sidebar_list_span:hover::before {
+  content: "";
+  display: block;
+  width: 1.5rem;
+  height: 1rem;
+  background-color: #4399e1;
+  position: absolute;
+  left: -2rem;
+  top: 0.5rem;
+}
+
 .services_page .services_main_info {
   width: 100%;
+}
+
+.services_page .services_main_info_first {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services_page .services_main_info_first .services_main_info_first_text {
+  max-width: 640rem;
+}
+
+.services_page .services_main_info_first .services_main_info_first_text .services_spacer {
+  margin: 3rem 0 2rem 0;
+}
+
+.services_page .services_main_info_first .services_main_info_first_text .in_text_link {
+  color: #47AAFB;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 1rem;
+}
+
+.services_page .services_main_info_table h4 {
+  font-weight: 600;
+  margin: 5rem 0 2rem 0;
+}
+
+.services_page .services_main_info_table button {
+  width: 32.5rem;
+  margin-top: 5rem;
+}
+
+.services_page .services_page_table {
+  width: 100%;
+  border-collapse: unset;
+  text-align: left;
+}
+
+.services_page .services_page_table thead {
+  border-radius: 5rem;
+  background-color: #4399e1;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.services_page .services_page_table thead tr {
+  height: 6rem;
+}
+
+.services_page .services_page_table thead tr th {
+  vertical-align: middle;
+}
+
+.services_page .services_page_table thead tr th:first-of-type {
+  padding-left: 3.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.services_page .services_page_table thead tr th:last-of-type {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.services_page .services_page_table tbody::before {
+  content: "@";
+  display: block;
+  line-height: 2rem;
+  text-indent: -99999px;
+}
+
+.services_page .services_page_table tbody tr {
+  height: 5rem;
+  border-radius: 5px;
+}
+
+.services_page .services_page_table tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+.services_page .services_page_table tbody tr td {
+  vertical-align: middle;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.services_page .services_page_table tbody tr td:first-of-type {
+  padding-left: 3.5rem;
+  padding-left: 3.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.services_page .services_page_table tbody tr td:last-of-type {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.contacts {
+  font-size: 1.6rem;
+  color: black;
+  padding-top: 12rem;
+}
+
+.contacts a {
+  color: black;
+}
+
+.contacts .contacts_title {
+  font-weight: bold;
+  border-bottom: 1px solid #d0d0d0;
+  padding-bottom: 4.5rem;
+}
+
+.contacts .contacts_title h3 {
+  font-size: 2.4rem;
+}
+
+.contacts .contacts_compan_name {
+  font-size: 2.4rem;
+  margin: 5rem 0 5rem 0;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
