@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <!-- jQuery Modal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <!-- jQuery Modal -->
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header_block d-flex">
+            <div class="logo">
+                <a href="#"><img src="img/Logo_black.png" alt="logo"></a>
+            </div>
+            <div class="navigation">
+                <a href="#">Наши работы</a>
+                <a href="#">Цены</a>
+                <a href="#">Услуги</a>
+                <a href="#">Рассчитать стоимость</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="tels">
+                <a href="tel:+7(499)0000000">+7(499)0000000</a>
+                <a href="tel:+7(499)0000000">+7(499)0000000</a>
+                <a href="#" class="color_link">обратный звонок</a>
+            </div>
+        </div>
+    </header>
+    <section class="prices_page">
+        <div class="wrapper">
+            <h3 class="topline prices_page_title">
+                Наши цены
+            </h3>
+            <div class="prices_flex d-flex">
+                <div class="prices_tables">
+                    <div class="prices_main_info_table">
+                        <h4>Стоимость монтажа отопления</h3>
+                        <table class="services_page_table">
+                            <thead>
+                                <tr>
+                                    <th>Наименование работ</th>
+                                    <th>Ед.изм.</th>
+                                    <th>Стоимость</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Монтаж радиатора отопления (навес на стену)</td>
+                                    <td>шт.</td>
+                                    <td><b>1950 руб.</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Монтаж нестандартных радиаторов: чугунные, Дизайн-радиаторы</td>
+                                    <td>шт.</td>
+                                    <td><b>от 3000 руб.</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Монтаж внутрипольного конвектора отопления</td>
+                                    <td>шт.</td>
+                                    <td><b>2950 руб.</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Монтаж распределительного коллектора отопления <br> (включая подключение трубопроводов, установку запорной арматуры)</td>
+                                    <td>шт.</td>
+                                    <td><b>5000 руб.</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Монтаж труб системы отопления (металлопластик, сшитый полиэтилен) до Ø16-20 мм</td>
+                                    <td>м</td>
+                                    <td><b>85 руб.</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Монтаж труб системы отопления (металлопластик, сшитый полиэтилен) Ø25-32 мм</td>
+                                    <td>м</td>
+                                    <td><b>255 руб.</b></td>
+                                </tr>
+                                <tr>
+                                    <td>Монтаж внутрипольного конвектора отопления</td>
+                                    <td>шт.</td>
+                                    <td><b>2950 руб.</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="yellow">Заказать расчет</button>
+                    </div>
+                </div>
+                <div class="prices_plans">
+                    <div class="prices_title">
+                        <p class="prices_title_text">Выберете прлощадь:</p>
+                        <div class="prices_title_area d-flex">
+                            <button class="area_button tablinks active" onclick="openTab(event, '100', 'to100')" id="defaultOpen">100 м<sup>2</sup></button>
+                            <button class="area_button tablinks" onclick="openTab(event, '200', 'to200')">200 м<sup>2</sup></button>
+                            <button class="area_button tablinks" onclick="openTab(event, '300', 'to300')">300 м<sup>2</sup></button>
+                        </div>
+                        <p class="prices_title_text_min tabdescriptor" id="to100">* В расчетах заложено отопление площадью до <b>100 м<sup>2</sup></b></p>
+                        <p class="prices_title_text_min tabdescriptor" id="to200">* В расчетах заложено отопление площадью до <b>200 м<sup>2</sup></b></p>
+                        <p class="prices_title_text_min tabdescriptor" id="to300">* В расчетах заложено отопление площадью до <b>300 м<sup>2</sup></b></p>
+                    </div>
+                    <div class="wrapper topline_white">
+                        <div class="prices_plans_item d-flex tabcontent" id="100">
+                            <div class="prices_plan">
+                                <h3>
+                                    Эконом
+                                </h3>
+                                <div class="prices_plan_float topline">
+                                    <p><b>Монтажные работы</b></p>
+                                    <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
+                                    <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
+                                    <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
+                                    <p><b>Теплый пол:</b> нет</p>
+                                    <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                                </div>
+                                <p class="prices_plans_price">100 000 руб.</p>
+                                <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                            </div>
+                            <div class="prices_plan">
+                                <h3>
+                                    Стандарт
+                                </h3>
+                                <div class="prices_plan_float topline">
+                                    <p><b>Монтажные работы</b></p>
+                                    <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
+                                    <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
+                                    <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
+                                    <p><b>Теплый пол:</b> нет</p>
+                                    <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                                </div>
+                                <p class="prices_plans_price">150 000 руб.</p>
+                                <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                            </div>
+                            <div class="prices_plan">
+                                <h3>
+                                    Премиум
+                                </h3>
+                                <div class="prices_plan_float topline">
+                                    <p><b>Монтажные работы</b></p>
+                                    <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
+                                    <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
+                                    <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
+                                    <p><b>Теплый пол:</b> нет</p>
+                                    <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                                </div>
+                                <p class="prices_plans_price">250 000 руб.</p>
+                                <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                            </div>
+                        </div>
+                        <div class="prices_plans_item d-flex tabcontent" id="200">
+                            <div class="prices_plan">
+                                <h3>
+                                    Эконом
+                                </h3>
+                                <div class="prices_plan_float topline">
+                                    <p><b>Монтажные работы</b></p>
+                                    <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
+                                    <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
+                                    <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
+                                    <p><b>Теплый пол:</b> нет</p>
+                                    <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                                </div>
+                                <p class="prices_plans_price">200 000 руб.</p>
+                                <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                            </div>
+                            <div class="prices_plan">
+                                <h3>
+                                    Стандарт
+                                </h3>
+                                <div class="prices_plan_float topline">
+                                    <p><b>Монтажные работы</b></p>
+                                    <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
+                                    <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
+                                    <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
+                                    <p><b>Теплый пол:</b> нет</p>
+                                    <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                                </div>
+                                <p class="prices_plans_price">250 000 руб.</p>
+                                <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                            </div>
+                            <div class="prices_plan">
+                                <h3>
+                                    Премиум
+                                </h3>
+                                <div class="prices_plan_float topline">
+                                    <p><b>Монтажные работы</b></p>
+                                    <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
+                                    <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
+                                    <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
+                                    <p><b>Теплый пол:</b> нет</p>
+                                    <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                                </div>
+                                <p class="prices_plans_price">350 000 руб.</p>
+                                <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                            </div>
+                        </div>
+                        <div class="prices_plans_item d-flex tabcontent" id="300">
+                            <div class="prices_plan">
+                                <h3>
+                                    Эконом
+                                </h3>
+                                <div class="prices_plan_float topline">
+                                    <p><b>Монтажные работы</b></p>
+                                    <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
+                                    <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
+                                    <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
+                                    <p><b>Теплый пол:</b> нет</p>
+                                    <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                                </div>
+                                <p class="prices_plans_price">300 000 руб.</p>
+                                <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                            </div>
+                            <div class="prices_plan">
+                                <h3>
+                                    Стандарт
+                                </h3>
+                                <div class="prices_plan_float topline">
+                                    <p><b>Монтажные работы</b></p>
+                                    <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
+                                    <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
+                                    <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
+                                    <p><b>Теплый пол:</b> нет</p>
+                                    <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                                </div>
+                                <p class="prices_plans_price">350 000 руб.</p>
+                                <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                            </div>
+                            <div class="prices_plan">
+                                <h3>
+                                    Премиум
+                                </h3>
+                                <div class="prices_plan_float topline">
+                                    <p><b>Монтажные работы</b></p>
+                                    <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
+                                    <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
+                                    <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
+                                    <p><b>Теплый пол:</b> нет</p>
+                                    <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                                </div>
+                                <p class="prices_plans_price">450 000 руб.</p>
+                                <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                            </div>
+                        </div>
+                        <div class="center_button">
+                            <button class="yellow_on_blue">Заказать расчет</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="d-flex aline-base justify-sb">
+                <div class="footer_logo">
+                    <div class="logo">
+                        <a href="#"><img src="img/Logo_black.png" alt="logo"></a>
+                    </div>
+                    <div class="rights topline">
+                        <p>© 2021. All rights reserved. </p>
+                    </div>
+                </div>
+                <div class="tels footer_tels">
+                    <a href="tel:+7(499)0000000">+7(499)0000000</a>
+                    <a href="tel:+7(499)0000000">+7(499)0000000</a>
+                    <a href="#" class="color_link">обратный звонок</a>
+                </div>
+                <div class="adress">
+                    <p class="adress_title"><b>123456, г. Москва</b></p>
+                    <p>ул. Название, д. 18, корп. 3,<br> эт. 5, офис 156</p>
+                    <a href="mailto:info@mosgazotoplenie.ru">info@mosgazotoplenie.ru</a>
+                </div>
+                <div class="schedule">
+                    <p>
+                        Работаем ежедневно с <b>10.00 до 19.00</b><br> Воскресенье - выходной
+                    </p>
+                    <a href="#"><img src="img/social/instagram.png" alt="instagram"></a>
+                    <a href="#"><img src="img/social/youtube.png" alt="youtube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="ex1" class="modal">
+        <div class="modal_inner d-flex">
+            <div class="modal_inner_text">
+                <div class="modal_inner_text_title">
+                    <p><b>
+                        Монтаж системы отопления, теплого пола, 
+                        установка котла и бойлера в загородном доме
+                    </b></p>
+                </div>
+                <div class="works_item_info d-flex">
+                    <div class="works_item_parametrs">
+                        <p>
+                            Срок:
+                        </p>
+                        <p>
+                            Площадь:
+                        </p>
+                        <p>
+                            Стоимость работ:
+                        </p>
+                    </div>
+                    <div class="works_item_parametrs_value">
+                        <p class="bold">14 дней</p>
+                        <p class="bold">120 м<sup>2</sup></p>
+                        <p class="bold blue">165 000 руб.</p>
+                    </div>
+                </div>
+                <div class="modal_inner_text_mainText">
+                    <p>
+                        Наша компания выполнила реконструкцию системы системы отопления в каменном доме. Общая отапливаемая площадь 450 м² . 
+                        <br><br>
+                        Объект: <b>Коттедж, отапливаемая площадь 120 м² . Московская обл., Талдомский район, д. Амундсово</b>
+                        <br><br>
+                        <div class="blue"><b>Реконструкция системы отопления дома:</b></div>
+                        <br><br>
+                        Заменена полность вся разводка труб. Изначально трубы были из стали и прокладка была внутри стен. Наша команда произвела разводку труб из меди производство Германия, заменили все радитаоры отопления (в количестве 44 шутк). В согласии с хозяином дома выбрали бренд Kermi  (Германия).
+                        <br><br>
+                        <div class="blue"><b>Реконструкция котельной дома: </b></div>
+                        <br><br>
+                        Произведён демонтаж всех узлов в котельной кроме отопительного котла. Котел остался, т.к. работал исправно уже 10 лет. (чугунный котел Buderus Logano G234-60). 
+                        <br><br>
+                        Нами был установлен бойлер для нагрева воды из нержавеющей стали ACV SLEW 240 (Бельгия). Смонтирован распределительный коллектор со смесительными группами Hansa (Германия), Все отопительные контуры в пределах котельной выплнены из меди (Германия). Весь трубопровод по водоснабжению выполнен из полипропилена (Турция). А так же были заменены расширительные баки на отопление и водоснабжение. 
+                    </p>
+                </div>
+            </div>
+            <div class="modal_inner_pics">
+                <div class="modal_inner_pic">
+                    <img id="modal_main_photo" src="img/works/modern-heater.jpeg" alt="modern_heater">
+                </div>
+                <div class="modal_inner_pics_min d-flex">
+                    <img src="img/works/modern-heater.jpeg" alt="modern_heater" onclick="ChangePhoto(event)">
+                    <img src="img/works/kotelnya.jpeg" alt="modern_heater" onclick="ChangePhoto(event)">
+                    <img src="img/works/Layer 38.jpeg" alt="modern_heater" onclick="ChangePhoto(event)">
+                    <img src="img/works/Layer.jpeg" alt="modern_heater" onclick="ChangePhoto(event)">
+                </div>
+            </div>
+        </div>
+        <div class="modal_form d-flex">
+            <div class="modal_form_text">
+                <div class="modal_form_text_title">
+                    Закажи расчет прямо сейчас <div class="golden">бесплатно</div>
+                </div>
+                <p class="topline">
+                    Заполните форму и получите приблизительный <br> расчет стоимости отопления в вашем доме.
+                </p>
+            </div>
+            <div class="modal_form_inputs">
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Телефон*">
+            </div>
+            <div class="modal_form_submit">
+                <button class="yellow">Отправить</button>
+                <p>*Поля, отмеченные звездочкой, <br> обязательны к заполнению.</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="libs\jquery\jquery351_min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js" defer></script>
+</body>
+</html>

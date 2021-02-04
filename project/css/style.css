@@ -506,7 +506,7 @@ input:focus, input:active, textarea:focus, textarea:active {
   background-color: #47AAFB;
   display: none;
   position: absolute;
-  top: -5.5rem;
+  top: -7.5rem;
 }
 
 .header_block .navigation a:hover {
@@ -532,8 +532,16 @@ input:focus, input:active, textarea:focus, textarea:active {
   line-height: 2.5rem;
 }
 
+.tels a {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
 .tels .color_link {
   color: #2384d3;
+  text-decoration: underline;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .promo {
@@ -1394,6 +1402,7 @@ input:focus, input:active, textarea:focus, textarea:active {
   font-size: 1.6rem;
   color: black;
   padding-top: 12rem;
+  padding-bottom: 22rem;
 }
 
 .contacts a {
@@ -1414,5 +1423,283 @@ input:focus, input:active, textarea:focus, textarea:active {
   font-size: 2.4rem;
   margin: 5rem 0 5rem 0;
   font-weight: bold;
+}
+
+.contacts .contacts_info {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contacts .contacts_info .icon_img {
+  position: absolute;
+  left: -3rem;
+  top: -0.5rem;
+}
+
+.contacts .contacts_info_address {
+  margin-bottom: 3rem;
+}
+
+.contacts .contacts_info_address .adress_title {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.contacts .contacts_info_address .e-mail_link {
+  margin-top: 3rem;
+  text-decoration: underline;
+}
+
+.contacts .contacts_info_address .e-mail_link a {
+  color: #47AAFB;
+}
+
+.contacts .contacts_info_phones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 2.4rem;
+  position: relative;
+}
+
+.contacts .contacts_info_phones .color_link {
+  margin-top: 2.5rem;
+  color: #47AAFB;
+  text-decoration: underline;
+}
+
+.contacts .contacts_info_phones .phone_number {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.contacts .contacts_info_shedule {
+  position: relative;
+}
+
+.contacts .contacts_info_shedule p {
+  margin-bottom: 4rem;
+}
+
+.contacts .contacts_info_shedule a {
+  margin-right: 2rem;
+}
+
+.prices_page {
+  padding-top: 3.5rem;
+  color: black;
+  overflow: hidden;
+}
+
+.prices_page .prices_page_title {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.prices_page .prices_title .prices_title_text {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.prices_page .prices_title .prices_title_area {
+  margin-top: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 800;
+}
+
+.prices_page .prices_title .prices_title_area p {
+  margin-left: 1.5rem;
+}
+
+.prices_page .prices_title .prices_title_text_min {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+.prices_page .prices_title .area_button {
+  padding: 0.3rem 2rem;
+  font-size: 1.6rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-right: 1rem;
+  font-weight: 800;
+  color: black;
+  background-color: white;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.prices_page .prices_title .area_button.active, .prices_page .prices_title .area_button:hover {
+  background-color: #47AAFB;
+  color: white;
+}
+
+.prices_page .topline_white {
+  border-top: 2px solid white;
+  margin-top: 3rem;
+  padding-bottom: 9.6rem;
+}
+
+.prices_page .topline_white::before {
+  content: "";
+  display: block;
+  width: 6.7em;
+  height: 7px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: -4px;
+}
+
+.prices_page .topline_white .tabcontent {
+  display: none;
+}
+
+.prices_page .prices_plans {
+  padding-top: 3.5rem;
+  padding-left: 2rem;
+  -ms-flex-preferred-size: 60rem;
+      flex-basis: 60rem;
+  position: relative;
+}
+
+.prices_page .prices_plans::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 200%;
+  top: 0;
+  background-color: #f8f9fa;
+  z-index: -3;
+  left: 0rem;
+}
+
+.prices_page .prices_plans .prices_plans_item {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.prices_page .prices_plans .prices_plan {
+  background-color: white;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3.5rem 6rem 6rem 4.5rem;
+  font-size: 1.4rem;
+  border-radius: 4px;
+}
+
+.prices_page .prices_plans .prices_plan .prices_plan_float {
+  max-width: 300px;
+}
+
+.prices_page .prices_plans .prices_plan .prices_plan_float::before {
+  width: 6.7rem;
+  height: 7px;
+  background-color: #47AAFB;
+  margin: 2rem auto;
+}
+
+.prices_page .prices_plans .prices_plan .prices_plan_float p {
+  margin-bottom: 2rem;
+}
+
+.prices_page .prices_plans .prices_plan .prices_plans_price {
+  margin-top: 1rem;
+  margin-bottom: 2.2rem;
+  font-size: 2.4rem;
+  color: #47AAFB;
+  font-weight: bold;
+}
+
+.prices_page .prices_tables {
+  width: 100%;
+  font-size: 1.6rem;
+  padding-right: 1.7rem;
+}
+
+.prices_page .prices_tables .prices_main_info_table h4 {
+  margin: 5rem 0 2rem 0;
+  font-weight: 600;
+}
+
+.prices_page .prices_tables .services_page_table {
+  width: 100%;
+  border-collapse: unset;
+  text-align: left;
+}
+
+.prices_page .prices_tables .services_page_table thead {
+  border-radius: 5rem;
+  background-color: #4399e1;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.prices_page .prices_tables .services_page_table thead tr {
+  height: 6rem;
+}
+
+.prices_page .prices_tables .services_page_table thead tr th {
+  vertical-align: middle;
+}
+
+.prices_page .prices_tables .services_page_table thead tr th:first-of-type {
+  padding-left: 3.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.prices_page .prices_tables .services_page_table thead tr th:last-of-type {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.prices_page .prices_tables .services_page_table tbody::before {
+  content: "@";
+  display: block;
+  line-height: 2rem;
+  text-indent: -99999px;
+}
+
+.prices_page .prices_tables .services_page_table tbody tr {
+  height: 5rem;
+  border-radius: 5px;
+}
+
+.prices_page .prices_tables .services_page_table tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+
+.prices_page .prices_tables .services_page_table tbody tr td {
+  vertical-align: middle;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.prices_page .prices_tables .services_page_table tbody tr td:first-of-type {
+  padding-left: 3.5rem;
+  padding-left: 3.5rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.prices_page .prices_tables .services_page_table tbody tr td:last-of-type {
+  border-radius: 0 0.5rem 0.5rem 0;
 }
 /*# sourceMappingURL=style.css.map */
