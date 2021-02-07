@@ -1,0 +1,16 @@
+=respond-to($media)
+  @if $media == laptop
+    @media only screen and (max-width: 1399px)
+      @content
+
+  @if $media == tablet
+    @media only screen and (max-width: 1200px)
+      @content
+
+  @if $media == pablet
+    @media only screen and (max-width: 900px)
+      @content
+
+  @if $media == mobile
+    @media only screen and (max-width: 599px)
+      @content

@@ -1,0 +1,776 @@
+.header_index
+    font-size: 1.6rem
+    height: 855px
+
+.header
+    font-size: 1.6rem
+    box-shadow: 0px 5px 20px 10px rgba(34, 60, 80, 0.1)
+    a
+        color: black
+
+.header_img
+    position: absolute
+    z-index: -1
+    width: 100%
+    height: 100%
+    .promo_sl
+        height: 857px
+        width: 100wv
+        background-size: 100%
+        background-repeat: no-repeat
+    
+.header_block
+    align-items: center
+    justify-content: space-between
+    padding-top: 2rem
+    padding-bottom: 3rem
+    .navigation
+        display: flex
+        justify-content: space-evenly
+        flex: 1 1 auto
+        margin-top: 1.3em
+        a
+            font-weight: 600
+            position: relative
+            &::before
+                content: ''
+                width: 100%
+                height: 7px
+                background-color: $blue
+                display: none
+                position: absolute
+                top: -7.5rem
+            &:hover
+                color: $blue
+                &::before
+                    display: block
+
+
+.tels
+    display: flex
+    flex-direction: column
+    margin-top: 1.3em
+    align-items: flex-end
+    line-height: 2.5rem
+    a
+        font-size: 2.4rem
+        font-weight: 600
+    .color_link
+        color: #2384d3
+        text-decoration: underline
+        margin-top: 1.5rem
+        font-size: 1.4rem
+
+.promo
+    margin-top: 15rem
+    align-items: center
+    .arrow
+        position: absolute
+    .left_arrow
+        top: 25em
+        left: 5em
+    .rigth_arrow
+        top: 25em
+        right: 5em
+    .promo_info
+        max-width: 50rem
+        display: none
+    .current
+        display: block
+        p
+            margin-bottom: 5.5rem
+
+.works
+    color: black
+    margin-top: 4.3rem
+    .works_title
+        text-align: center
+        margin-bottom: 6.4rem
+        h3
+            font-size: 2.4rem
+            margin-bottom: 2.3rem
+            &::before
+                margin: 1.5rem auto
+        a
+            color: $blue
+            text-decoration: underline
+    .works_items
+        flex-wrap: wrap
+        justify-content: space-between
+        .works_item
+            max-width: 34rem
+            margin-bottom: 7.6rem
+            border-radius: 5px
+            border: solid 1px rgba(0, 0, 0, 0.06)
+            img
+                width: 100%
+                height: 24.5rem
+                object-fit: cover
+                border-radius: 1rem
+            .works_item_title
+                font-size: 1.8rem
+                margin-top: 3.5rem
+                margin-bottom: 2.5rem
+                margin-left: 2.6rem
+                margin-right: 4rem
+            .works_item_info
+                font-size: 1.4rem
+                margin-left: 2.6rem
+            .works_item_parametrs_value
+                margin-left: 2rem
+                margin-bottom: 4rem
+            .works_item_button
+                margin-bottom: 3rem
+            &:hover
+                border-radius: 5px
+                box-shadow: 0px 4px 34.7px 0.4px rgba(0, 0, 0, 0.1)
+
+.prices
+    margin-top: -4rem
+    padding-top: 6rem
+    color: white
+    background-color: $blue
+    .prices_title
+        display: flex
+        flex-direction: column
+        align-items: center
+        font-size: 1.6rem
+        h3
+            font-size: 2.4rem
+        .prices_title_area
+            margin-top: 2rem
+            align-items: center
+            font-weight: 800
+            p
+                margin-left: 1.5rem
+        .prices_title_text_min
+            font-size: 1.4rem
+            margin-top: 1.5rem
+        .area_button
+            padding: 0.2rem 2rem
+            font-size: 1.6rem
+            border: 1px solid white
+            border-radius: 5px
+            margin-left: 1rem
+            font-weight: 800
+            &.active, &:hover
+                background-color: white
+                color: $blue
+    .topline_white
+        border-top: 2px solid white
+        margin-top: 5rem
+        padding-bottom: 9.6rem
+        &::before
+            content: ""
+            display: block
+            width: 6.7em
+            height: 7px
+            background-color: white
+            margin: 0 auto
+            margin-top: -4px
+        .tabcontent 
+            display: none
+    .prices_plans
+        margin-top: 3.5rem
+        margin-bottom: 7.5rem
+        justify-content: space-between
+        .prices_plan
+            background-color: white
+            color: black
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 3.5rem 6rem 6rem 4.5rem
+            font-size: 1.4rem
+            border-radius: 4px
+            .prices_plan_float
+                max-width: 300px
+                &::before
+                    width: 6.7rem
+                    height: 7px
+                    background-color: $blue
+                    margin: 2rem auto
+                p
+                    margin-bottom: 2rem
+            .prices_plans_price
+                margin-top: 1rem
+                margin-bottom: 2.2rem
+                font-size: 2.4rem
+                color: $blue
+                font-weight: bold
+
+.services
+    color: black
+    font-size: 1.6rem
+    padding-top: 6.3rem
+    h3,p
+        text-align: center
+    h3
+        font-size: 2.4rem
+        margin-bottom: 1.3rem
+    img
+        border-radius: 110rem
+    .services_inner
+        justify-content: space-around
+        padding-top: 3.2rem
+        margin-bottom: 6.2rem
+        .services_item
+            width: min-content
+            p
+                margin-top: 3.3rem
+                text-transform: uppercase
+    .services_link
+        text-align: center
+        margin-top: 3.2rem
+    .services_allServices
+        color: $blue
+        text-decoration: underline
+        
+.form
+    color: black
+    background: url('../img/Big_logo1.png') no-repeat 10rem 0rem
+    padding-top: 8.6rem
+    padding-bottom: 30rem
+    .form_full
+        display: flex
+        width: 100%
+        font-size: 1.6rem
+        // box-shadow: 0px 4px 34.7px 0.4px rgba(0, 0, 0, 0.1)
+        h3
+            font-size: 2.4rem
+        .topline
+            &::before
+                width: 6.7rem
+                height: 7px
+                margin: 1.5em 0
+        .left_form
+            padding: 10rem
+            width: 50%
+            background: rgba(251,251,251,0.6)
+            backdrop-filter: blur(10px)
+            .form_actions
+                margin-top: 5.6rem
+                display: flex
+                flex-direction: column
+                align-items: center
+                select, input, .form_wrapper
+                    margin-bottom: 1.3rem
+                    width: 450px
+                    border-radius: 3rem
+                    padding: 1.5rem 2rem
+                    border: none
+                p
+                    font-size: 1.6rem
+                    font-weight: 600
+                    margin-bottom: 3rem
+                .checkboxs
+                    input
+                        width: auto
+        .rigth_form
+            width: 50%
+            background-color: $blue
+            color: white
+            padding: 10rem
+            padding-left: 15rem
+            position: relative
+            .form_contact_info
+                display: flex
+                flex-direction: column
+                &::before
+                    background-color: #77C2FF
+                input, textarea
+                    margin-bottom: 1.3rem
+                    width: 450px
+                    border-radius: 3rem
+                    padding: 1.5rem 2rem
+                    border: none
+                .textarea
+                    height: 17rem
+            &::before
+                content: ""
+                position: absolute
+                width: 3rem
+                height: 3rem
+                background-color: $blue
+                transform: rotate(45deg)
+                left: -1rem
+            button
+                padding: 2.6rem 10.5rem
+                margin: 3.4rem 0
+            .rigth_deg
+                position: absolute
+                transform: rotate(-90deg)
+                color: white
+                right: 0
+                bottom: 16rem
+                font-size: 2.4rem
+                &::before
+                    display: block
+                    content: ""
+                    height: 7px
+                    width: 6.7rem
+                    background-color: white
+                    left: -7rem
+                    top: 1.5rem
+                    position: absolute
+
+
+.steps
+    color: black
+    font-size: 1.8rem
+    padding-bottom: 13rem
+    box-shadow: 0px 26px 20px 10px rgba(34, 60, 80, 0.17)
+    overflow: hidden
+    h3
+        font-size: 2.4rem
+        font-weight: 800
+        margin: 2rem auto
+        text-align: center
+
+.steps_thumbnails
+    display: flex
+    justify-content: space-around
+    position: relative
+    margin: 40px -55px
+    &::before
+        content: ""
+        z-index: -1
+        width: 100%
+        height: 3px
+        background-color: #47AAFB
+        position: absolute
+        top: 63px
+        left: 60%
+        transform: translate(-50%, 0)
+    &::after
+        content: ""
+        width: 6.7rem
+        height: 7px
+        background-color: #47AAFB
+        top: 6.1rem
+        position: absolute
+        z-index: 4
+        right: 3rem
+    .step
+        max-width: 25%
+        p
+            text-align: center
+        .step_title
+            margin: 5rem auto
+    .num_circle 
+        margin: 5px auto
+        border-radius: 50%
+        background-color: #BCDAF3
+        width: 114px
+        height: 114px
+        .num 
+            position: relative
+            left: 35px
+            top: 35px
+            font-size: 6rem
+            line-height: 86px
+            font-weight: bold
+            color: #ffffff
+    .num_circle_two
+        background-color: #A8D1F2
+    .num_circle_three
+        background-color: #77BAF1
+    .num_circle_four
+        background-color: #49A2EB
+
+.footer
+    color: black
+    font-size: 1.4rem
+    padding-top: 5rem
+    margin-bottom: 9rem
+    box-shadow: inset 0px 40px 47px -30px rgba(34, 60, 80, 0.17)
+    a
+        color: black
+        font-weight: 600
+    .footer_logo
+        img
+            margin-bottom: -3rem
+        .rights
+            margin-top: 6rem
+    .footer_tels
+        a
+            font-size: 2.4rem
+            margin-top: 0.5rem
+        .color_link
+            text-decoration: underline
+            margin-top: 2rem
+    .adress
+        font-size: 1.6rem
+        .adress_title
+            margin-bottom: 2rem
+        a
+            display: block
+            margin-top: 1rem
+    .schedule
+        p
+            margin-bottom: 4rem
+        a
+            margin-right: 2rem
+
+.modal
+    max-width: 139rem
+    color: black
+    padding: 0
+    .modal_inner
+        padding: 4.5rem
+    .modal_inner_text
+        width: 50%
+        font-size: 1.4rem
+        .modal_inner_text_title
+            font-size: 2.2rem
+            margin-bottom: 4rem
+        .works_item_info
+            margin-bottom: 5rem
+            .works_item_parametrs
+                margin-right: 2rem
+    .modal_inner_pics
+        margin: 0 0 0 auto
+        .modal_inner_pic
+            width: 100%
+            margin-bottom: 2.4rem
+            img
+                width: 48.5rem
+        .modal_inner_pics_min
+            flex-wrap: wrap
+            img
+                margin: auto
+                width: 11.5rem
+                height: 11.5rem
+                object-fit: cover
+    .modal_form
+        background-color: #4399e1
+        padding: 4.5rem
+        color: white
+        justify-content: space-between;
+        .modal_form_text_title
+            font-size: 2.4rem
+            font-weight: 600
+        p
+            font-size: 1.6rem
+        .topline
+            &::before
+                margin: 1rem 0
+        .modal_form_inputs
+            display: flex
+            flex-direction: column
+            input
+                width: 450px
+                height: 58px
+                border-radius: 29px;
+                padding: 2.5rem
+                border: none
+                &:nth-child(1)
+                    margin-bottom: 1.4rem
+        button
+            padding: 2.5rem 10rem
+            margin-bottom: 2.7rem
+
+
+.services_page
+    color: black
+    font-size: 1.6rem
+    padding-top: 12rem
+    padding-bottom: 9.6rem
+    button
+        box-shadow: 0 15px 25px 0px rgba(34, 60, 80, 0.17)
+    .services_title
+        padding-bottom: 4rem
+        border-bottom: 1px solid #d0d0d0
+    .services_title_sidebar
+        margin-top: -3rem
+        flex-basis: 50rem
+        h3
+            float: left
+    .services_title_main
+        align-items: center
+        justify-content: space-between
+        width: 100%
+    .services_main
+        margin-top: 5.7rem
+        line-height: 2.4rem
+    .services_main_sidebar
+        flex-basis: 50rem
+        .services_sidebar_item
+            font-weight: 600
+            position: relative
+            &:hover
+                cursor: pointer
+                color: #2d93e6
+        .services_sidebar_item_list
+            margin-top: 2rem
+            margin-bottom: 2rem
+            margin-right: 5rem
+            &.open
+                padding-bottom: 2rem
+                padding-top: 2rem
+                border-bottom: 1px solid #d0d0d0
+                border-top: 1px solid #d0d0d0
+        .sidebar_list_span
+            position: relative
+            &:hover
+                margin-left: 2rem
+                cursor: pointer
+                &::before
+                    content: ""
+                    display: block
+                    width: 1.5rem
+                    height: 1rem
+                    background-color: #4399e1
+                    position: absolute
+                    left: -2rem
+                    top: 0.5rem
+    .services_main_info
+        width: 100%
+    .services_main_info_first
+        justify-content: space-between
+        .services_main_info_first_text
+            max-width: 640rem
+            .services_spacer
+                margin: 3rem 0 2rem 0
+            .in_text_link
+                color: $blue
+                text-decoration: underline
+                cursor: pointer
+                font-weight: 600
+                margin: 1rem
+    .services_main_info_table
+        h4
+            font-weight: 600
+            margin: 5rem 0 2rem 0
+        button
+            width: 32.5rem
+            margin-top: 5rem
+    .services_page_table
+        width: 100%
+        border-collapse: unset
+        text-align: left
+        thead
+            border-radius: 5rem
+            background-color: #4399e1
+            color: white
+            margin-bottom: 2rem
+            tr
+                height: 6rem
+                th
+                    vertical-align: middle
+                    &:first-of-type
+                        padding-left: 3.5rem
+                        border-radius: 0.5rem 0 0 0.5rem
+                    &:last-of-type
+                        border-radius: 0 0.5rem 0.5rem 0
+        tbody
+            &::before
+                content: "@"
+                display: block
+                line-height: 2rem
+                text-indent: -99999px
+            tr
+                height: 5rem
+                border-radius: 5px
+                &:nth-child(odd)
+                    background-color: #f8f9fa
+                td
+                    vertical-align: middle
+                    padding-top: 1rem
+                    padding-bottom: 1rem
+                    &:first-of-type
+                        padding-left: 3.5rem
+                        padding-left: 3.5rem
+                        border-radius: 0.5rem 0 0 0.5rem
+                    &:last-of-type
+                        border-radius: 0 0.5rem 0.5rem 0
+                        
+                        
+.contacts
+    font-size: 1.6rem
+    color: black
+    padding-top: 12rem
+    padding-bottom: 22rem
+    a
+        color: black
+    .contacts_title
+        font-weight: bold
+        border-bottom: 1px solid #d0d0d0
+        padding-bottom: 4.5rem
+        h3
+            font-size: 2.4rem
+    .contacts_compan_name
+        font-size: 2.4rem
+        margin: 5rem 0 5rem 0
+        font-weight: bold
+    .contacts_info
+        justify-content: space-around 
+        .icon_img
+            position: absolute
+            left: -3rem
+            top: -0.5rem
+    .contacts_info_address
+        margin-bottom: 3rem
+        .adress_title
+            margin-bottom: 1rem
+            position: relative
+        .e-mail_link
+            margin-top: 3rem
+            text-decoration: underline
+            a
+                color: $blue
+    .contacts_info_phones
+        display: flex
+        flex-direction: column
+        font-size: 2.4rem
+        position: relative
+        .color_link
+            margin-top: 2.5rem
+            color: $blue
+            text-decoration: underline
+        .phone_number
+            font-size: 2.4rem
+            font-weight: 600
+    .contacts_info_shedule
+        position: relative
+        p
+            margin-bottom: 4rem
+        a
+            margin-right: 2rem
+
+.prices_page
+    padding-top: 3.5rem
+    color: black
+    overflow: hidden
+    .prices_page_title
+        padding-bottom: 4rem
+        border-bottom: 1px solid #d0d0d0
+    .prices_title
+        .prices_title_text
+            font-size: 1.6rem
+            font-weight: 600
+        .prices_title_area
+            margin-top: 2rem
+            align-items: center
+            font-weight: 800
+            p
+                margin-left: 1.5rem
+        .prices_title_text_min
+            font-size: 1.4rem
+            margin-top: 1.5rem
+        .area_button
+            padding: 0.3rem 2rem
+            font-size: 1.6rem
+            border: 1px solid white
+            border-radius: 5px
+            margin-right: 1rem
+            font-weight: 800
+            color: black
+            background-color: white
+            border: solid 1px rgba(0, 0, 0, 0.1)
+            &.active, &:hover
+                background-color: $blue
+                color: white
+    .topline_white
+        border-top: 2px solid white
+        margin-top: 3rem
+        padding-bottom: 9.6rem
+        &::before
+            content: ""
+            display: block
+            width: 6.7em
+            height: 7px
+            background-color: white
+            margin: 0 auto
+            margin-top: -4px
+        .tabcontent 
+            display: none
+    .prices_plans
+        padding-top: 3.5rem
+        padding-left: 2rem
+        flex-basis: 60rem
+        position: relative
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            height: 100%
+            width: 200%
+            top: 0
+            background-color: #f8f9fa
+            z-index: -3
+            left: 0rem
+        .prices_plans_item
+            justify-content: space-between
+            flex-direction: column
+        .prices_plan
+            background-color: white
+            color: black
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 3.5rem 6rem 6rem 4.5rem
+            font-size: 1.4rem
+            border-radius: 4px
+            .prices_plan_float
+                max-width: 300px
+                &::before
+                    width: 6.7rem
+                    height: 7px
+                    background-color: $blue
+                    margin: 2rem auto
+                p
+                    margin-bottom: 2rem
+            .prices_plans_price
+                margin-top: 1rem
+                margin-bottom: 2.2rem
+                font-size: 2.4rem
+                color: $blue
+                font-weight: bold
+    .prices_tables
+        width: 100%
+        font-size: 1.6rem
+        padding-right: 1.7rem
+        .prices_main_info_table
+            h4
+                margin: 5rem 0 2rem 0
+                font-weight: 600
+        .services_page_table
+            width: 100%
+            border-collapse: unset
+            text-align: left
+            thead
+                border-radius: 5rem
+                background-color: #4399e1
+                color: white
+                margin-bottom: 2rem
+                tr
+                    height: 6rem
+                    th
+                        vertical-align: middle
+                        &:first-of-type
+                            padding-left: 3.5rem
+                            border-radius: 0.5rem 0 0 0.5rem
+                        &:last-of-type
+                            border-radius: 0 0.5rem 0.5rem 0
+            tbody
+                &::before
+                    content: "@"
+                    display: block
+                    line-height: 2rem
+                    text-indent: -99999px
+                tr
+                    height: 5rem
+                    border-radius: 5px
+                    &:nth-child(odd)
+                        background-color: #f8f9fa
+                    td
+                        vertical-align: middle
+                        padding-top: 1rem
+                        padding-bottom: 1rem
+                        &:first-of-type
+                            padding-left: 3.5rem
+                            padding-left: 3.5rem
+                            border-radius: 0.5rem 0 0 0.5rem
+                        &:last-of-type
+                            border-radius: 0 0.5rem 0.5rem 0
