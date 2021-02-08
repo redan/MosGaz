@@ -34,6 +34,7 @@ jQuery(document).ready(function () {
 
 function ChangePhoto(e){
     let mainPhoto = document.getElementById('modal_main_photo');
+    console.log(mainPhoto);
     mainPhoto.src = e.srcElement.currentSrc
 }
 

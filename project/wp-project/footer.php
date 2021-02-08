@@ -30,7 +30,99 @@
             </div>
         </div>
     </footer>
-    <div id="ex1" class="modal">
+    <?php 
+                    $posts = get_posts( array(
+                        'numberposts' => 0,
+                        'category_name'    => 'works',
+                        'orderby'     => 'date',
+                        'order'       => 'ASC',
+                        'post_type'   => 'post',
+                        'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+                    ) );
+                    $int = 0;
+                    foreach( $posts as $post ){
+                        setup_postdata($post);
+                        $int++;
+                        ?> 
+                            <div id="ex<?= $int ?>" class="modal">
+                                <div class="modal_inner d-flex">
+                                    <div class="modal_inner_text">
+                                        <div class="modal_inner_text_title">
+                                            <p><b>
+                                                <?= the_title(  ) ?>
+                                            </b></p>
+                                        </div>
+                                        <div class="works_item_info d-flex">
+                                            <div class="works_item_parametrs">
+                                                <p>
+                                                    Срок:
+                                                </p>
+                                                <p>
+                                                    Площадь:
+                                                </p>
+                                                <p>
+                                                    Стоимость работ:
+                                                </p>
+                                            </div>
+                                            <div class="works_item_parametrs_value">
+                                                <p class="bold"> <?php the_field('works_delay') ?></p>
+                                                <p class="bold"> <?php the_field('works_area') ?>  м<sup><small>2</small></sup></p>
+                                                <p class="bold blue"> <?php the_field('works_price') ?> </p>
+                                            </div>
+                                        </div>
+                                        <div class="modal_inner_text_mainText">
+                                            <p>
+                                                <?php the_field('works_sub_title') ?> 
+                                                <br><br>
+                                                Объект: <b><?php the_field('works_object_description') ?></b>
+                                                <br><br>
+                                                <div class="blue"><b><?php the_field('works_title_blue_1') ?></b></div>
+                                                <br><br>
+                                                <?php the_field('works_text_under_1') ?>
+                                                <br><br>
+                                                <div class="blue"><b><?php the_field('works_title_blue_2') ?> </b></div>
+                                                <br><br>
+                                                <?php the_field('works_text_under_2') ?>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="modal_inner_pics">
+                                        <div class="modal_inner_pic">
+                                            <img id="modal_main_photo" src="<?= CFS()->get( 'works_foto_prev' );?>" alt="main_img">
+                                        </div>
+                                        <div class="modal_inner_pics_min d-flex">
+                                            <img src="<?php echo bloginfo('template_url'); ?>/assets/img/works/modern-heater.jpeg" alt="modern_heater" onclick="ChangePhoto(event)">
+                                            <img src="<?php echo bloginfo('template_url'); ?>/assets/img/works/kotelnya.jpeg" alt="modern_heater" onclick="ChangePhoto(event)">
+                                            <img src="<?php echo bloginfo('template_url'); ?>/assets/img/works/Layer 38.jpeg" alt="modern_heater" onclick="ChangePhoto(event)">
+                                            <img src="<?php echo bloginfo('template_url'); ?>/assets/img/works/Layer.jpeg" alt="modern_heater" onclick="ChangePhoto(event)">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal_form d-flex">
+                                    <div class="modal_form_text">
+                                        <div class="modal_form_text_title">
+                                            Закажи расчет прямо сейчас <div class="golden">бесплатно</div>
+                                        </div>
+                                        <p class="topline">
+                                            Заполните форму и получите приблизительный <br> расчет стоимости отопления в вашем доме.
+                                        </p>
+                                    </div>
+                                    <div class="modal_form_inputs">
+                                        <input type="text" placeholder="Ваше имя">
+                                        <input type="text" placeholder="Телефон*">
+                                    </div>
+                                    <div class="modal_form_submit">
+                                        <button class="yellow_on_blue">Отправить</button>
+                                        <p>*Поля, отмеченные звездочкой, <br> обязательны к заполнению.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php
+                    }
+                    
+                    wp_reset_postdata(); // сброс
+                ?>
+    <!-- <div id="ex1" class="modal">
         <div class="modal_inner d-flex">
             <div class="modal_inner_text">
                 <div class="modal_inner_text_title">
@@ -105,7 +197,7 @@
                 <p>*Поля, отмеченные звездочкой, <br> обязательны к заполнению.</p>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- <script type="text/javascript" src="libs\jquery\jquery351_min.js"></script> -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>

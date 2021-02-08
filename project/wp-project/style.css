@@ -613,6 +613,9 @@ input:focus, input:active, textarea:focus, textarea:active {
 }
 
 .works .works_items .works_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 34rem;
   margin-bottom: 7.6rem;
   border-radius: 5px;
@@ -834,7 +837,7 @@ input:focus, input:active, textarea:focus, textarea:active {
   padding-bottom: 30rem;
 }
 
-.form .form_full {
+.form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -842,17 +845,21 @@ input:focus, input:active, textarea:focus, textarea:active {
   font-size: 1.6rem;
 }
 
-.form .form_full h3 {
+.form form .wpcf7-response-output{
+  display: none !important;
+}
+
+.form form h3 {
   font-size: 2.4rem;
 }
 
-.form .form_full .topline::before {
+.form form .topline::before {
   width: 6.7rem;
   height: 7px;
   margin: 1.5em 0;
 }
 
-.form .form_full .left_form {
+.form form .left_form {
   padding: 10rem;
   width: 50%;
   background: rgba(251, 251, 251, 0.6);
@@ -860,7 +867,7 @@ input:focus, input:active, textarea:focus, textarea:active {
           backdrop-filter: blur(10px);
 }
 
-.form .form_full .left_form .form_actions {
+.form form .left_form .form_actions {
   margin-top: 5.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -874,7 +881,7 @@ input:focus, input:active, textarea:focus, textarea:active {
           align-items: center;
 }
 
-.form .form_full .left_form .form_actions select, .form .form_full .left_form .form_actions input, .form .form_full .left_form .form_actions .form_wrapper {
+.form form .left_form .form_actions select, .form form .left_form .form_actions input, .form form .left_form .form_actions .form_wrapper {
   margin-bottom: 1.3rem;
   width: 450px;
   border-radius: 3rem;
@@ -882,17 +889,17 @@ input:focus, input:active, textarea:focus, textarea:active {
   border: none;
 }
 
-.form .form_full .left_form .form_actions p {
+.form form .left_form .form_actions p {
   font-size: 1.6rem;
   font-weight: 600;
   margin-bottom: 3rem;
 }
 
-.form .form_full .left_form .form_actions .checkboxs input {
+.form form .left_form .form_actions .checkboxs input {
   width: auto;
 }
 
-.form .form_full .rigth_form {
+.form form .rigth_form {
   width: 50%;
   background-color: #47AAFB;
   color: white;
@@ -901,7 +908,7 @@ input:focus, input:active, textarea:focus, textarea:active {
   position: relative;
 }
 
-.form .form_full .rigth_form .form_contact_info {
+.form form .rigth_form .form_contact_info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -911,11 +918,11 @@ input:focus, input:active, textarea:focus, textarea:active {
           flex-direction: column;
 }
 
-.form .form_full .rigth_form .form_contact_info::before {
+.form form .rigth_form .form_contact_info::before {
   background-color: #77C2FF;
 }
 
-.form .form_full .rigth_form .form_contact_info input, .form .form_full .rigth_form .form_contact_info textarea {
+.form form .rigth_form .form_contact_info input, .form form .rigth_form .form_contact_info textarea {
   margin-bottom: 1.3rem;
   width: 450px;
   border-radius: 3rem;
@@ -923,11 +930,11 @@ input:focus, input:active, textarea:focus, textarea:active {
   border: none;
 }
 
-.form .form_full .rigth_form .form_contact_info .textarea {
+.form form .rigth_form .form_contact_info .textarea {
   height: 17rem;
 }
 
-.form .form_full .rigth_form::before {
+.form form .rigth_form::before {
   content: "";
   position: absolute;
   width: 3rem;
@@ -938,12 +945,12 @@ input:focus, input:active, textarea:focus, textarea:active {
   left: -1rem;
 }
 
-.form .form_full .rigth_form button {
+.form form .rigth_form button {
   padding: 2.6rem 10.5rem;
   margin: 3.4rem 0;
 }
 
-.form .form_full .rigth_form .rigth_deg {
+.form form .rigth_form .rigth_deg {
   position: absolute;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -953,7 +960,7 @@ input:focus, input:active, textarea:focus, textarea:active {
   font-size: 2.4rem;
 }
 
-.form .form_full .rigth_form .rigth_deg::before {
+.form form .rigth_form .rigth_deg::before {
   display: block;
   content: "";
   height: 7px;
@@ -1607,6 +1614,7 @@ input:focus, input:active, textarea:focus, textarea:active {
   padding: 3.5rem 6rem 6rem 4.5rem;
   font-size: 1.4rem;
   border-radius: 4px;
+  margin-bottom: 2rem;
 }
 
 .prices_page .prices_plans .prices_plan .prices_plan_float {

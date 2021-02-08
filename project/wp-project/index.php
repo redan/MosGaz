@@ -85,206 +85,51 @@
                 <a href="#">Посмотреть все</a>
             </div>
             <div class="works_items d-flex">
-                <div class="works_item">
-                    <img src="<?php echo bloginfo('template_url'); ?>/assets/img/works/Layer 38.jpeg" alt="kotelnaya">
-                    <p class="bold works_item_title">Монтаж системы отопления, теплого пола, установка котла и бойлера в загородном доме</p>
-                    <div class="works_item_info d-flex">
-                        <div class="works_item_parametrs">
-                            <p>
-                                Срок:
-                            </p>
-                            <p>
-                                Площадь:
-                            </p>
-                            <p>
-                                Стоимость работ:
-                            </p>
-                        </div>
-                        <div class="works_item_parametrs_value">
-                            <p class="bold">14 дней</p>
-                            <p class="bold">120 м<sup><small>2</small></sup></p>
-                            <p class="bold blue">165 000 руб.</p>
-                        </div>
-                    </div>
-                    <div class="works_item_button center_button">
-                        <a href="#ex1" rel="modal:open"><button class="colored">Подробнее</button></a>
-                    </div>
-                </div>
-                <div class="works_item">
-                    <img src="<?php echo bloginfo('template_url'); ?>/assets/img/works/modern-heater.jpeg" alt="kotelnaya">
-                    <p class="bold works_item_title">Монтаж системы отопления, теплого пола, установка котла и бойлера в загородном доме</p>
-                    <div class="works_item_info d-flex">
-                        <div class="works_item_parametrs">
-                            <p>
-                                Срок:
-                            </p>
-                            <p>
-                                Площадь:
-                            </p>
-                            <p>
-                                Стоимость работ:
-                            </p>
-                        </div>
-                        <div class="works_item_parametrs_value">
-                            <p class="bold">14 дней</p>
-                            <p class="bold">120 м<sup>2</sup></p>
-                            <p class="bold blue">165 000 руб.</p>
-                        </div>
-                    </div>
-                    <div class="works_item_button center_button">
-                        <a href="#ex1" rel="modal:open"><button class="colored">Подробнее</button></a>
-                    </div>
-                </div>
-                <div class="works_item">
-                    <img src="<?php echo bloginfo('template_url'); ?>/assets/img/works/kotelnya.jpeg" alt="kotelnaya">
-                    <p class="bold works_item_title">Монтаж системы отопления, теплого пола, установка котла и бойлера в загородном доме</p>
-                    <div class="works_item_info d-flex">
-                        <div class="works_item_parametrs">
-                            <p>
-                                Срок:
-                            </p>
-                            <p>
-                                Площадь:
-                            </p>
-                            <p>
-                                Стоимость работ:
-                            </p>
-                        </div>
-                        <div class="works_item_parametrs_value">
-                            <p class="bold">14 дней</p>
-                            <p class="bold">120 м<sup>2</sup></p>
-                            <p class="bold blue">165 000 руб.</p>
-                        </div>
-                    </div>
-                    <div class="works_item_button center_button">
-                        <a href="#ex1" rel="modal:open"><button class="colored">Подробнее</button></a>
-                    </div>
-                </div>
-                <div class="works_item">
-                    <img src="<?php echo bloginfo('template_url'); ?>/assets/img/works/Layer.jpeg" alt="kotelnaya">
-                    <p class="bold works_item_title">Монтаж системы отопления, теплого пола, установка котла и бойлера в загородном доме</p>
-                    <div class="works_item_info d-flex">
-                        <div class="works_item_parametrs">
-                            <p>
-                                Срок:
-                            </p>
-                            <p>
-                                Площадь:
-                            </p>
-                            <p>
-                                Стоимость работ:
-                            </p>
-                        </div>
-                        <div class="works_item_parametrs_value">
-                            <p class="bold">14 дней</p>
-                            <p class="bold">120 м<sup>2</sup></p>
-                            <p class="bold blue">165 000 руб.</p>
-                        </div>
-                    </div>
-                    <div class="works_item_button center_button">
-                        <a href="#ex1" rel="modal:open"><button class="colored">Подробнее</button></a>
-                    </div>
-                </div>
-                <div class="works_item">
-                    <img src="<?php echo bloginfo('template_url'); ?>/assets/img/works/Layer 38.jpeg" alt="kotelnaya">
-                    <p class="bold works_item_title">Монтаж системы отопления, теплого пола, установка котла и бойлера в загородном доме</p>
-                    <div class="works_item_info d-flex">
-                        <div class="works_item_parametrs">
-                            <p>
-                                Срок:
-                            </p>
-                            <p>
-                                Площадь:
-                            </p>
-                            <p>
-                                Стоимость работ:
-                            </p>
-                        </div>
-                        <div class="works_item_parametrs_value">
-                            <p class="bold">14 дней</p>
-                            <p class="bold">120 м<sup>2</sup></p>
-                            <p class="bold blue">165 000 руб.</p>
-                        </div>
-                    </div>
-                    <div class="works_item_button center_button">
-                        <a href="#ex1" rel="modal:open"><button class="colored">Подробнее</button></a>
-                    </div>
-                </div>
-                <div class="works_item">
-                    <img src="<?php echo bloginfo('template_url'); ?>/assets/img/works/modern-heater.jpeg" alt="kotelnaya">
-                    <p class="bold works_item_title">Монтаж системы отопления, теплого пола, установка котла и бойлера в загородном доме</p>
-                    <div class="works_item_info d-flex">
-                        <div class="works_item_parametrs">
-                            <p>
-                                Срок:
-                            </p>
-                            <p>
-                                Площадь:
-                            </p>
-                            <p>
-                                Стоимость работ:
-                            </p>
-                        </div>
-                        <div class="works_item_parametrs_value">
-                            <p class="bold">14 дней</p>
-                            <p class="bold">120 м<sup>2</sup></p>
-                            <p class="bold blue">165 000 руб.</p>
-                        </div>
-                    </div>
-                    <div class="works_item_button center_button">
-                        <a href="#ex1" rel="modal:open"><button class="colored">Подробнее</button></a>
-                    </div>
-                </div>
-                <div class="works_item">
-                    <img src="<?php echo bloginfo('template_url'); ?>/assets/img/works/kotelnya.jpeg" alt="kotelnaya">
-                    <p class="bold works_item_title">Монтаж системы отопления, теплого пола, установка котла и бойлера в загородном доме</p>
-                    <div class="works_item_info d-flex">
-                        <div class="works_item_parametrs">
-                            <p>
-                                Срок:
-                            </p>
-                            <p>
-                                Площадь:
-                            </p>
-                            <p>
-                                Стоимость работ:
-                            </p>
-                        </div>
-                        <div class="works_item_parametrs_value">
-                            <p class="bold">14 дней</p>
-                            <p class="bold">120 м<sup>2</sup></p>
-                            <p class="bold blue">165 000 руб.</p>
-                        </div>
-                    </div>
-                    <div class="works_item_button center_button">
-                        <a href="#ex1" rel="modal:open"><button class="colored">Подробнее</button></a>
-                    </div>
-                </div>
-                <div class="works_item">
-                    <img src="<?php echo bloginfo('template_url'); ?>/assets/img/works/Layer.jpeg" alt="kotelnaya">
-                    <p class="bold works_item_title">Монтаж системы отопления, теплого пола, установка котла и бойлера в загородном доме</p>
-                    <div class="works_item_info d-flex">
-                        <div class="works_item_parametrs">
-                            <p>
-                                Срок:
-                            </p>
-                            <p>
-                                Площадь:
-                            </p>
-                            <p>
-                                Стоимость работ:
-                            </p>
-                        </div>
-                        <div class="works_item_parametrs_value">
-                            <p class="bold">14 дней</p>
-                            <p class="bold">120 м<sup>2</sup></p>
-                            <p class="bold blue">165 000 руб.</p>
-                        </div>
-                    </div>
-                    <div class="works_item_button center_button">
-                        <a href="#ex1" rel="modal:open"><button class="colored">Подробнее</button></a>
-                    </div>
-                </div>
+                <?php 
+                    $posts = get_posts( array(
+                        'numberposts' => 8,
+                        'category_name'    => 'works',
+                        'orderby'     => 'date',
+                        'order'       => 'ASC',
+                        'post_type'   => 'post',
+                        'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+                    ) );
+                    $int = 0;
+                    foreach( $posts as $post ){
+                        setup_postdata($post);
+                        $int++;
+                        ?> 
+                            <div class="works_item">
+                                <img src="<?= CFS()->get( 'works_foto_prev' );?>" alt="kotelnaya">
+                                <p class="bold works_item_title"> <?= the_title(  ) ?></p>
+                                <div class="works_item_info d-flex">
+                                    <div class="works_item_parametrs">
+                                        <p>
+                                            Срок:
+                                        </p>
+                                        <p>
+                                            Площадь:
+                                        </p>
+                                        <p>
+                                            Стоимость работ:
+                                        </p>
+                                    </div>
+                                    <div class="works_item_parametrs_value">
+                                        <p class="bold"> <?php the_field('works_delay') ?></p>
+                                        <p class="bold"> <?php the_field('works_area') ?>  м<sup><small>2</small></sup></p>
+                                        <p class="bold blue"> <?php the_field('works_price') ?> </p>
+                                    </div>
+
+                                </div>
+                                <div class="works_item_button center_button">
+                                    <a href="#ex<?=$int?>" rel="modal:open"><button class="colored">Подробнее</button></a>
+                                </div>
+                            </div>
+                        <?php
+                    }
+                    
+                    wp_reset_postdata(); // сброс
+                ?>
             </div>
         </div>
     </section>
@@ -305,142 +150,142 @@
             <div class="prices_plans d-flex tabcontent" id="100">
                 <div class="prices_plan">
                     <h3>
-                        Эконом
+                    <?= CFS()->get('name_100_ec')?>
                     </h3>
                     <div class="prices_plan_float topline">
                         <p><b>Монтажные работы</b></p>
-                        <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
-                        <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
-                        <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
-                        <p><b>Теплый пол:</b> нет</p>
-                        <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                        <p><b>Комплектующие и материалы:</b> <?= CFS()->get('parts_100_ec')?></p>
+                        <p><b>Трубы:</b> <?= CFS()->get('tube_100_ec')?></p>
+                        <p><b>Радиаторы:</b><?= CFS()->get('radiators_100_ec')?></p>
+                        <p><b>Теплый пол:</b> <?= CFS()->get('heat_floor_100_ec')?></p>
+                        <p><b>Регулирование температуры:</b> <?= CFS()->get('control_100_ec')?></p>
                     </div>
-                    <p class="prices_plans_price">100 000 руб.</p>
-                    <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                    <p class="prices_plans_price"><?= CFS()->get('price_100_ec')?> руб.</p>
+                    <p><b>Срок выполнения работ:</b> <?= CFS()->get('time_100_ec')?></p>
                 </div>
                 <div class="prices_plan">
                     <h3>
-                        Стандарт
+                    <?= CFS()->get('name_100_st')?>
                     </h3>
                     <div class="prices_plan_float topline">
                         <p><b>Монтажные работы</b></p>
-                        <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
-                        <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
-                        <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
-                        <p><b>Теплый пол:</b> нет</p>
-                        <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                        <p><b>Комплектующие и материалы:</b> <?= CFS()->get('parts_100_st')?></p>
+                        <p><b>Трубы:</b> <?= CFS()->get('tube_100_st')?></p>
+                        <p><b>Радиаторы:</b><?= CFS()->get('radiators_100_st')?></p>
+                        <p><b>Теплый пол:</b> <?= CFS()->get('heat_floor_100_st')?></p>
+                        <p><b>Регулирование температуры:</b> <?= CFS()->get('control_100_st')?></p>
                     </div>
-                    <p class="prices_plans_price">150 000 руб.</p>
-                    <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                    <p class="prices_plans_price"><?= CFS()->get('price_100_st')?> руб.</p>
+                    <p><b>Срок выполнения работ:</b> <?= CFS()->get('time_100_st')?></p>
                 </div>
                 <div class="prices_plan">
                     <h3>
-                        Премиум
+                        <?= CFS()->get('name_100_pr')?>
                     </h3>
                     <div class="prices_plan_float topline">
                         <p><b>Монтажные работы</b></p>
-                        <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
-                        <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
-                        <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
-                        <p><b>Теплый пол:</b> нет</p>
-                        <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                        <p><b>Комплектующие и материалы:</b> <?= CFS()->get('parts_100_pr')?></p>
+                        <p><b>Трубы:</b> <?= CFS()->get('tube_100_pr')?></p>
+                        <p><b>Радиаторы:</b><?= CFS()->get('radiators_100_pr')?></p>
+                        <p><b>Теплый пол:</b> <?= CFS()->get('heat_floor_100_pr')?></p>
+                        <p><b>Регулирование температуры:</b> <?= CFS()->get('control_100_pr')?></p>
                     </div>
-                    <p class="prices_plans_price">250 000 руб.</p>
-                    <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                    <p class="prices_plans_price"><?= CFS()->get('price_100_pr')?> руб.</p>
+                    <p><b>Срок выполнения работ:</b> <?= CFS()->get('time_100_pr')?></p>
                 </div>
             </div>
             <div class="prices_plans d-flex tabcontent" id="200">
                 <div class="prices_plan">
                     <h3>
-                        Эконом
+                    <?= CFS()->get('name_200_ec')?>
                     </h3>
                     <div class="prices_plan_float topline">
                         <p><b>Монтажные работы</b></p>
-                        <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
-                        <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
-                        <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
-                        <p><b>Теплый пол:</b> нет</p>
-                        <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                        <p><b>Комплектующие и материалы:</b> <?= CFS()->get('parts_200_ec')?></p>
+                        <p><b>Трубы:</b> <?= CFS()->get('tube_200_ec')?></p>
+                        <p><b>Радиаторы:</b><?= CFS()->get('radiators_200_ec')?></p>
+                        <p><b>Теплый пол:</b> <?= CFS()->get('heat_floor_200_ec')?></p>
+                        <p><b>Регулирование температуры:</b> <?= CFS()->get('control_200_ec')?></p>
                     </div>
-                    <p class="prices_plans_price">200 000 руб.</p>
-                    <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                    <p class="prices_plans_price"><?= CFS()->get('price_200_ec')?> руб.</p>
+                    <p><b>Срок выполнения работ:</b> <?= CFS()->get('time_200_ec')?></p>
                 </div>
                 <div class="prices_plan">
                     <h3>
-                        Стандарт
+                    <?= CFS()->get('name_200_st')?>
                     </h3>
                     <div class="prices_plan_float topline">
                         <p><b>Монтажные работы</b></p>
-                        <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
-                        <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
-                        <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
-                        <p><b>Теплый пол:</b> нет</p>
-                        <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                        <p><b>Комплектующие и материалы:</b> <?= CFS()->get('parts_200_st')?></p>
+                        <p><b>Трубы:</b> <?= CFS()->get('tube_200_st')?></p>
+                        <p><b>Радиаторы:</b><?= CFS()->get('radiators_200_st')?></p>
+                        <p><b>Теплый пол:</b> <?= CFS()->get('heat_floor_200_st')?></p>
+                        <p><b>Регулирование температуры:</b> <?= CFS()->get('control_200_st')?></p>
                     </div>
-                    <p class="prices_plans_price">250 000 руб.</p>
-                    <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                    <p class="prices_plans_price"><?= CFS()->get('price_200_st')?> руб.</p>
+                    <p><b>Срок выполнения работ:</b> <?= CFS()->get('time_200_st')?></p>
                 </div>
                 <div class="prices_plan">
                     <h3>
-                        Премиум
+                        <?= CFS()->get('name_200_pr')?>
                     </h3>
                     <div class="prices_plan_float topline">
                         <p><b>Монтажные работы</b></p>
-                        <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
-                        <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
-                        <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
-                        <p><b>Теплый пол:</b> нет</p>
-                        <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                        <p><b>Комплектующие и материалы:</b> <?= CFS()->get('parts_200_pr')?></p>
+                        <p><b>Трубы:</b> <?= CFS()->get('tube_200_pr')?></p>
+                        <p><b>Радиаторы:</b><?= CFS()->get('radiators_200_pr')?></p>
+                        <p><b>Теплый пол:</b> <?= CFS()->get('heat_floor_200_pr')?></p>
+                        <p><b>Регулирование температуры:</b> <?= CFS()->get('control_200_pr')?></p>
                     </div>
-                    <p class="prices_plans_price">350 000 руб.</p>
-                    <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                    <p class="prices_plans_price"><?= CFS()->get('price_200_pr')?> руб.</p>
+                    <p><b>Срок выполнения работ:</b> <?= CFS()->get('time_200_pr')?></p>
                 </div>
             </div>
             <div class="prices_plans d-flex tabcontent" id="300">
                 <div class="prices_plan">
                     <h3>
-                        Эконом
+                    <?= CFS()->get('name_300_ec')?>
                     </h3>
                     <div class="prices_plan_float topline">
                         <p><b>Монтажные работы</b></p>
-                        <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
-                        <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
-                        <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
-                        <p><b>Теплый пол:</b> нет</p>
-                        <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                        <p><b>Комплектующие и материалы:</b> <?= CFS()->get('parts_300_ec')?></p>
+                        <p><b>Трубы:</b> <?= CFS()->get('tube_300_ec')?></p>
+                        <p><b>Радиаторы:</b><?= CFS()->get('radiators_300_ec')?></p>
+                        <p><b>Теплый пол:</b> <?= CFS()->get('heat_floor_300_ec')?></p>
+                        <p><b>Регулирование температуры:</b> <?= CFS()->get('control_300_ec')?></p>
                     </div>
-                    <p class="prices_plans_price">300 000 руб.</p>
-                    <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                    <p class="prices_plans_price"><?= CFS()->get('price_300_ec')?> руб.</p>
+                    <p><b>Срок выполнения работ:</b> <?= CFS()->get('time_300_ec')?></p>
                 </div>
                 <div class="prices_plan">
                     <h3>
-                        Стандарт
+                    <?= CFS()->get('name_300_st')?>
                     </h3>
                     <div class="prices_plan_float topline">
                         <p><b>Монтажные работы</b></p>
-                        <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
-                        <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
-                        <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
-                        <p><b>Теплый пол:</b> нет</p>
-                        <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                        <p><b>Комплектующие и материалы:</b> <?= CFS()->get('parts_300_st')?></p>
+                        <p><b>Трубы:</b> <?= CFS()->get('tube_300_st')?></p>
+                        <p><b>Радиаторы:</b><?= CFS()->get('radiators_300_st')?></p>
+                        <p><b>Теплый пол:</b> <?= CFS()->get('heat_floor_300_st')?></p>
+                        <p><b>Регулирование температуры:</b> <?= CFS()->get('control_300_st')?></p>
                     </div>
-                    <p class="prices_plans_price">350 000 руб.</p>
-                    <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                    <p class="prices_plans_price"><?= CFS()->get('price_300_st')?> руб.</p>
+                    <p><b>Срок выполнения работ:</b> <?= CFS()->get('time_300_st')?></p>
                 </div>
                 <div class="prices_plan">
                     <h3>
-                        Премиум
+                        <?= CFS()->get('name_300_pr')?>
                     </h3>
                     <div class="prices_plan_float topline">
                         <p><b>Монтажные работы</b></p>
-                        <p><b>Комплектующие и материалы:</b> Италия, Словакия, Китай</p>
-                        <p><b>Трубы:</b> Полипропиленовые (прокладка двухтрубная)</p>
-                        <p><b>Радиаторы:</b> Алюминиевые секционные Котёл: Настенный Protherm (Словакия) или Baxi (Италия)</p>
-                        <p><b>Теплый пол:</b> нет</p>
-                        <p><b>Регулирование температуры:</b> Ручное на радиаторах</p>
+                        <p><b>Комплектующие и материалы:</b> <?= CFS()->get('parts_300_pr')?></p>
+                        <p><b>Трубы:</b> <?= CFS()->get('tube_300_pr')?></p>
+                        <p><b>Радиаторы:</b><?= CFS()->get('radiators_300_pr')?></p>
+                        <p><b>Теплый пол:</b> <?= CFS()->get('heat_floor_300_pr')?></p>
+                        <p><b>Регулирование температуры:</b> <?= CFS()->get('control_300_pr')?></p>
                     </div>
-                    <p class="prices_plans_price">450 000 руб.</p>
-                    <p><b>Срок выполнения работ:</b> 5-7 дней</p>
+                    <p class="prices_plans_price"><?= CFS()->get('price_300_pr')?> руб.</p>
+                    <p><b>Срок выполнения работ:</b> <?= CFS()->get('time_300_pr')?></p>
                 </div>
             </div>
             <div class="center_button">
@@ -482,62 +327,9 @@
     </section>
     <section class="form">
         <div class="wrapper">
-            <form action="#" class="form_full">
-                <div class="left_form">
-                    <h3>
-                        Расчитать стоимось
-                    </h3>
-                    <p class="topline">
-                        Запоните формулу и получите приблизительный расчет стоимости отопления в вашем доме.
-                    </p>
-                    <div class="form_actions">
-                        <select  name="object_type">
-                            <option disabled>Тип объекта</option>
-                            <option value="">Дом</option>
-                            <option selected value="">Квартира</option>
-                            <option value="">Комерческая</option>
-                        </select>
-                        <input type="text" class="form_area">
-                        <select  name="object_type">
-                            <option disabled>Источник тепла</option>
-                            <option value="">Газ</option>
-                            <option selected value="">Электричество</option>
-                            <option value="">Уголь</option>
-                        </select>
-                        <select  name="object_type">
-                            <option disabled>Материал стен</option>
-                            <option value="">Бетон</option>
-                            <option selected value="">Гипсокртон</option>
-                            <option value="">Кирпич</option>
-                        </select>
-                        <div class="form_wrapper">
-                            <p>Планируете ли теплый пол?</p>
-                            <label class="checkboxs">
-                                <input type="radio" name="yes" value="yes">Да
-                                <input type="radio" name="no" value="no">Нет
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div class="rigth_form">
-                    <h3 class="white">
-                        Контактная информация
-                    </h3>
-                    <div class="form_contact_info topline">
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="text" placeholder="E-mail*">
-                        <input type="text" placeholder="Телефон">
-                        <textarea name="" id="" cols="30" rows="10" class="textarea" placeholder="Комментарий"></textarea>
-                    </div>
-                    <button class="yellow_on_blue" type="submit">Отправить</button>
-                    <p class="add_info">
-                        *Поля, отмеченные звездочкой, обязательны к заполнению
-                    </p>
-                    <div class="rigth_deg">
-                        <p>МосГазОтоление</p>
-                    </div>
-                </div>
-            </form>
+            <div class="form_full">
+                <?php echo do_shortcode( '[contact-form-7 id="69" title="Большая форма рассчитать стоимость"]' ) ?>
+            </div>
         </div>
     </section>
     <section class="steps">
