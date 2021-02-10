@@ -5,18 +5,12 @@ jQuery(document).ready(function () {
         infinite: true,
         autoplaySpeed: 4000,
         autoplay: true,
-        dots: true,
+        dots: false,
         speed: 1200,
-        // variableWidth: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        appendDots: '.numbers_promo',
         prevArrow: '.left_arrow',
         nextArrow: '.rigth_arrow',
-        customPaging: function (slider, i) {
-            i = i + 1;
-            return '<div class="current_slide_num">' + i + '</div><div class="count_slides">' + slider.slideCount + '</div>';
-        }
     })
 
     var i = 0;
@@ -30,11 +24,23 @@ jQuery(document).ready(function () {
         jQuery('.promo_info').removeClass('current');
         jQuery('.promo_info[data-slick-index="' + nextSlideNum + '"]').addClass('current');
     });
+
+    let logo = document.getElementById('main_logo');
+
+
+    jQuery(window).scroll(function () {
+        if (jQuery(window).scrollTop() > 60) {
+            jQuery('.header_fixer').addClass("sticky");
+            logo.src = logo.src.replace(/Logo.png/i, 'Logo_black.png');
+        } else {
+            jQuery('.header_fixer').removeClass("sticky");
+            logo.src = logo.src.replace(/Logo_black.png/i, 'Logo.png');
+        }
+    })
 })
 
-function ChangePhoto(e){
-    let mainPhoto = document.getElementById('modal_main_photo');
-    console.log(mainPhoto);
+function ChangePhoto(e, i){
+    let mainPhoto = document.getElementById(`modal_main_photo${i}`);
     mainPhoto.src = e.srcElement.currentSrc
 }
 

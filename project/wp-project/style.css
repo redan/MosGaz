@@ -175,6 +175,26 @@ button {
   border-radius: 5rem;
 }
 
+.link_btn {
+  font-size: 2rem;
+  padding: 2.5rem 4rem;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  border-radius: 5rem;
+}
+
+.link_btn.colored {
+  background: #47AAFB;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
 button.colored {
   background: #47AAFB;
   -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1);
@@ -184,6 +204,11 @@ button.colored {
 button.colored:hover {
   background: #FECC4B;
 }
+
+.link_btn.colored:hover {
+  background: #FECC4B;
+}
+
 
 button.yellow {
   background: #FECC4B;
@@ -199,6 +224,16 @@ button.yellow_on_blue {
 }
 
 button.yellow_on_blue:hover {
+  border: 3px solid #FECC4B;
+  background: #47AAFB;
+}
+
+.link_btn.yellow_on_blue {
+  background: #FECC4B;
+  border: 3px solid #FECC4B;
+}
+
+.link_btn.yellow_on_blue:hover {
   border: 3px solid #FECC4B;
   background: #47AAFB;
 }
@@ -259,6 +294,10 @@ body .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.text_center {
+  text-align: center;
 }
 
 .blue {
@@ -1174,6 +1213,18 @@ input:focus, input:active, textarea:focus, textarea:active {
   background-color: #4399e1;
   padding: 4.5rem;
   color: white;
+}
+
+.modal .modal_form .wpcf7{
+  width: 100%;
+}
+
+.modal .modal_form .wpcf7-response-output {
+  display: none !important;
+}
+
+.modal .modal_form .wpcf7 form {
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1711,5 +1762,32 @@ input:focus, input:active, textarea:focus, textarea:active {
 
 .prices_page .prices_tables .services_page_table tbody tr td:last-of-type {
   border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.header_fixer.sticky {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.52);
+  z-index: 1;
+}
+
+.header_fixer.sticky a {
+  color: black;
+}
+
+.header_fixer.sticky a.color_link {
+  color: #47AAFB;
+}
+
+.slick-dots li {
+  width: auto;
+}
+
+.pager__dot{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  border: 1px solid white;
 }
 /*# sourceMappingURL=style.css.map */

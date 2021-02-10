@@ -25,24 +25,24 @@
                 <div class="promo_sl" style="background-image: url('<?php echo $loop['slider_index_img'] ?>')">
                 </div>
             <?php } ?>
-            <!-- <div class="promo_sl" style="background-image: url('<?php echo bloginfo('template_url'); ?>/assets/img/promo_bg/гл баннер@1X.png');"></div>
-            <div class="promo_sl" style="background-image: url('<?php echo bloginfo('template_url'); ?>/assets/img/promo_bg/гл баннер@1X.png');"></div> -->
         </div>
-        <div class="wrapper header_block d-flex">
-            <div class="logo">
-                <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/assets/img/logo.svg" alt="logo"></a>
-            </div>
-            <div class="navigation">
-                <a href="#">Наши работы</a>
-                <a href="#">Цены</a>
-                <a href="#">Услуги</a>
-                <a href="#">Рассчитать стоимость</a>
-                <a href="#">Контакты</a>
-            </div>
-            <div class="tels">
-                <a href="tel:<?= CFS()->get('tel_number_1'); ?>"><?= CFS()->get('tel_number_1'); ?></a>
-                <a href="tel:<?= CFS()->get('tel_number_2'); ?>"><?= CFS()->get('tel_number_2'); ?></a>
-                <a href="#" class="color_link">обратный звонок</a>
+        <div class="header_fixer">
+            <div class="header_block wrapper d-flex">
+                <div class="logo">
+                    <a href="#"><img id='main_logo' src="<?php echo bloginfo('template_url'); ?>/assets/img/Logo.png" alt="logo"></a>
+                </div>
+                <div class="navigation">
+                    <a href="#">Наши работы</a>
+                    <a href="#">Цены</a>
+                    <a href="#">Услуги</a>
+                    <a href="#">Рассчитать стоимость</a>
+                    <a href="kontakty">Контакты</a>
+                </div>
+                <div class="tels">
+                    <a href="tel:<?= CFS()->get('tel_number_1'); ?>"><?= CFS()->get('tel_number_1'); ?></a>
+                    <a href="tel:<?= CFS()->get('tel_number_2'); ?>"><?= CFS()->get('tel_number_2'); ?></a>
+                    <a href="#contact_modal" rel="modal:open" class="color_link">обратный звонок</a>
+                </div>
             </div>
         </div>
         <div class="promo">
@@ -289,7 +289,7 @@
                 </div>
             </div>
             <div class="center_button">
-                <button class="yellow_on_blue">Заказать расчет</button>
+                <a class="link_btn yellow_on_blue" href="#contact_modal" rel="modal:open">Заказать расчет</a>
             </div>
         </div>
     </section>
@@ -319,7 +319,7 @@
             </div>
         </div>
         <div class="center_button">
-            <button class="colored">Оставить заявку</button>
+            <a class="link_btn colored" href="#contact_modal" rel="modal:open">Оставить заявку</a>
         </div>
         <div class="services_link">
             <a href="#" class="services_allServices">Все услуги</a>
