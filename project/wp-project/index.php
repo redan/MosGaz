@@ -1,3 +1,8 @@
+<?php 
+/*
+Template name: Главная
+*/
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +39,7 @@
                 <div class="navigation">
                     <a href="#">Наши работы</a>
                     <a href="#">Цены</a>
-                    <a href="#">Услуги</a>
+                    <a href="uslugi">Услуги</a>
                     <a href="#">Рассчитать стоимость</a>
                     <a href="kontakty">Контакты</a>
                 </div>
@@ -370,6 +375,19 @@
             </div>
         </div>
     </section>
+    <script>
+        let logo = document.getElementById('main_logo');
+        
+        jQuery(window).scroll(function () {
+            if (jQuery(window).scrollTop() > 60) {
+                jQuery('.header_fixer').addClass("sticky");
+                logo.src = logo.src.replace(/Logo.png/i, 'Logo_black.png');
+            } else {
+                jQuery('.header_fixer').removeClass("sticky");
+                logo.src = logo.src.replace(/Logo_black.png/i, 'Logo.png');
+            }
+        })
+    </script>
 <?php 
     get_footer();
 ?>

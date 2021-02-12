@@ -28,14 +28,14 @@
                 <div class="navigation">
                     <a href="#">Наши работы</a>
                     <a href="#">Цены</a>
-                    <a href="#">Услуги</a>
+                    <a href="uslugi">Услуги</a>
                     <a href="#">Рассчитать стоимость</a>
-                    <a href="#">Контакты</a>
+                    <a href="kontakty">Контакты</a>
                 </div>
                 <div class="tels">
                     <a href="tel:+7(499)0000000">+7(499)0000000</a>
                     <a href="tel:+7(499)0000000">+7(499)0000000</a>
-                    <a href="#" class="color_link">обратный звонок</a>
+                    <a href="#contact_modal" rel="modal:open" class="color_link">обратный звонок</a>
                 </div>
             </div>
         </div>

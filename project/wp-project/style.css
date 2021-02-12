@@ -238,6 +238,16 @@ button.yellow_on_blue:hover {
   background: #47AAFB;
 }
 
+.link_btn.yellow_on_white {
+  background: #FECC4B;
+  border: 3px solid #FECC4B;
+}
+
+.link_btn.yellow_on_white:hover {
+  border: 3px solid #47AAFB;
+  background: #47AAFB;
+}
+
 button.bordered {
   border: 2px solid #47AAFB;
   -webkit-filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.06)), drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1));
@@ -1789,5 +1799,55 @@ input:focus, input:active, textarea:focus, textarea:active {
   height: 1rem;
   border-radius: 1rem;
   border: 1px solid white;
+}
+
+.top_up_button {
+  display: none; 
+  position: fixed; 
+  height: 12rem;
+  width: 12rem;
+  bottom: 20px; 
+  right: 10rem; 
+  z-index: 99;
+  border: none;
+  outline: none; 
+  background-color: #fecc4b; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px;
+  border-radius: 10rem; 
+  font-size: 14rem; 
+  box-shadow: -11px 0px 24px 0 rgba(0, 0, 0, 0.2);
+  transform: rotate(-90deg);
+}
+
+.top_up_button p{
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  padding-bottom: 0.5rem;
+  margin-top: -1rem;
+  width: 7rem;
+}
+
+.arrow-left{
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #FFFFFF;
+  position: absolute;
+  top: 58px;
+  left: 89px;
+}
+
+/* .top_up_button p::after{
+  content: ;
+} */
+
+.top_up_button:hover {
+  box-shadow: -12px 0px 22px 0 rgba(0, 0, 0, 0.4);
 }
 /*# sourceMappingURL=style.css.map */

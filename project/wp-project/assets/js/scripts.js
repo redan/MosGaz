@@ -25,18 +25,28 @@ jQuery(document).ready(function () {
         jQuery('.promo_info[data-slick-index="' + nextSlideNum + '"]').addClass('current');
     });
 
-    let logo = document.getElementById('main_logo');
 
+    // jQuery(window).scroll(function () {
+    //     if (jQuery(window).scrollTop() > 60) {
+    //         jQuery('.header_fixer').addClass("sticky");
+    //         logo.src = logo.src.replace(/Logo.png/i, 'Logo_black.png');
+    //     } else {
+    //         jQuery('.header_fixer').removeClass("sticky");
+    //         logo.src = logo.src.replace(/Logo_black.png/i, 'Logo.png');
+    //     }
+    // })
 
-    jQuery(window).scroll(function () {
-        if (jQuery(window).scrollTop() > 60) {
-            jQuery('.header_fixer').addClass("sticky");
-            logo.src = logo.src.replace(/Logo.png/i, 'Logo_black.png');
+    mybutton = document.getElementById("top_btn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+            mybutton.style.display = "block";
         } else {
-            jQuery('.header_fixer').removeClass("sticky");
-            logo.src = logo.src.replace(/Logo_black.png/i, 'Logo.png');
+            mybutton.style.display = "none";
         }
-    })
+    }
 })
 
 function ChangePhoto(e, i){
@@ -69,3 +79,8 @@ function openTab(evt, tabName, tabDescrName) {
     evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click().addClass('active');
+
+
+function scrollTopAnimated() { 
+    jQuery("html, body").animate({ scrollTop: "0" }, 1000); 
+}
