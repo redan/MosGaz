@@ -639,6 +639,10 @@ input:focus, input:active, textarea:focus, textarea:active {
   margin-bottom: 6.4rem;
 }
 
+.works .works_title_page {
+  margin-bottom: 6.4rem;
+}
+
 .works .works_title h3 {
   font-size: 2.4rem;
   margin-bottom: 2.3rem;
@@ -646,6 +650,10 @@ input:focus, input:active, textarea:focus, textarea:active {
 
 .works .works_title h3::before {
   margin: 1.5rem auto;
+}
+
+.works .works_title_page h3::before {
+  margin: 1.5rem 0;
 }
 
 .works .works_title a {
@@ -706,6 +714,8 @@ input:focus, input:active, textarea:focus, textarea:active {
   -webkit-box-shadow: 0px 4px 34.7px 0.4px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 34.7px 0.4px rgba(0, 0, 0, 0.1);
 }
+
+
 
 .prices {
   margin-top: -4rem;
@@ -1341,6 +1351,7 @@ input:focus, input:active, textarea:focus, textarea:active {
   margin-top: 2rem;
   margin-bottom: 2rem;
   margin-right: 5rem;
+  display: none;
 }
 
 .services_page .services_main_sidebar .services_sidebar_item_list.open {
@@ -1348,6 +1359,7 @@ input:focus, input:active, textarea:focus, textarea:active {
   padding-top: 2rem;
   border-bottom: 1px solid #d0d0d0;
   border-top: 1px solid #d0d0d0;
+  display: block;
 }
 
 .services_page .services_main_sidebar .sidebar_list_span {
@@ -1372,6 +1384,11 @@ input:focus, input:active, textarea:focus, textarea:active {
 
 .services_page .services_main_info {
   width: 100%;
+  display: none;
+}
+
+.services_page .services_main_info.active {
+  display: block;
 }
 
 .services_page .services_main_info_first {
@@ -1410,6 +1427,7 @@ input:focus, input:active, textarea:focus, textarea:active {
   width: 100%;
   border-collapse: unset;
   text-align: left;
+  margin-bottom: 6rem;
 }
 
 .services_page .services_page_table thead {
@@ -1806,7 +1824,7 @@ input:focus, input:active, textarea:focus, textarea:active {
   position: fixed; 
   height: 12rem;
   width: 12rem;
-  bottom: 20px; 
+  bottom: 15rem; 
   right: 10rem; 
   z-index: 99;
   border: none;

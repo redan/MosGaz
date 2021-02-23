@@ -529,6 +529,9 @@
                     top: 0.5rem
     .services_main_info
         width: 100%
+        display: none
+    .services_main_info, .active
+        display: block
     .services_main_info_first
         justify-content: space-between
         .services_main_info_first_text
@@ -778,3 +781,21 @@
                             border-radius: 0.5rem 0 0 0.5rem
                         &:last-of-type
                             border-radius: 0 0.5rem 0.5rem 0
+
+
+// Фиксер хедера 
+
+.sticky
+    position: fixed
+    width: 100%
+    background-color: white
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,0.52)
+    z-index: 1
+
+.sticky 
+    a
+        color: black
+
+.sticky
+    .color_link 
+        color: #47AAFB

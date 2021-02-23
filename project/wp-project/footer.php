@@ -113,7 +113,6 @@
                             </div>
                         <?php
                     }
-                    
                     wp_reset_postdata(); // сброс
                 ?>
     <button id="top_btn" class="top_up_button" onclick="scrollTopAnimated()"> 

@@ -10,27 +10,6 @@
     <!-- jQuery Modal -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <!-- jQuery Modal -->
-    
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <!-- Favicon end -->
-
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -40,21 +19,25 @@
             <div class="promo_sl" style="background-image: url('img/promo_bg/гл баннер@1X.png');"></div>
             <div class="promo_sl" style="background-image: url('img/promo_bg/гл баннер@1X.png');"></div>
         </div>
-        <div class="wrapper header_block d-flex">
-            <div class="logo">
-                <a href="#"><img src="img/logo.svg" alt="logo"></a>
-            </div>
-            <div class="navigation">
-                <a href="#">Наши работы</a>
-                <a href="#">Цены</a>
-                <a href="#">Услуги</a>
-                <a href="#">Рассчитать стоимость</a>
-                <a href="#">Контакты</a>
-            </div>
-            <div class="tels">
-                <a href="tel:+7(499)0000000">+7(499)0000000</a>
-                <a href="tel:+7(499)0000000">+7(499)0000000</a>
-                <a href="#" class="color_link">обратный звонок</a>
+        <div class="header_fixer">
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn" onclick="openHamburger(event)"><span class="navicon"></span></label>
+            <div class="wrapper header_block d-flex">
+                <div class="logo">
+                    <a href="#"><img id="main_logo" src="img/logo.png" alt="logo"></a>
+                </div>
+                <div class="navigation">
+                    <a href="#">Наши работы</a>
+                    <a href="#">Цены</a>
+                    <a href="#">Услуги</a>
+                    <a href="#">Рассчитать стоимость</a>
+                    <a href="#">Контакты</a>
+                </div>
+                <div class="tels">
+                    <a href="tel:+7(499)0000000">+7(499)0000000</a>
+                    <a href="tel:+7(499)0000000">+7(499)0000000</a>
+                    <a href="#" class="color_link">обратный звонок</a>
+                </div>
             </div>
         </div>
         <div class="promo">
@@ -691,5 +674,21 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script type="text/javascript" src="js/scripts.js" defer></script>
+    <script>
+        let width=screen.width; // ширина  
+        let height=screen.height; // высота  
+
+        let logo = document.getElementById('main_logo');
+        
+        jQuery(window).scroll(function () {
+            if (jQuery(window).scrollTop() > 60) {
+                jQuery('.header_fixer').addClass("sticky");
+                logo.src = logo.src.replace(/Logo.png/i, 'Logo_black.png');
+            } else {
+                jQuery('.header_fixer').removeClass("sticky");
+                logo.src = logo.src.replace(/Logo_black.png/i, 'Logo.png');
+            }
+        })
+    </script>
 </body>
 </html>

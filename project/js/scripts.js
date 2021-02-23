@@ -61,3 +61,9 @@ function openTab(evt, tabName, tabDescrName) {
     evt.currentTarget.className += " active";
 }
 document.getElementById("defaultOpen").click().addClass('active');
+
+
+
+function openHamburger(e) {
+    $('.navigation').toggleClass('nav_active');
+}

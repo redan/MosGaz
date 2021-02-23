@@ -84,3 +84,28 @@ document.getElementById("defaultOpen").click().addClass('active');
 function scrollTopAnimated() { 
     jQuery("html, body").animate({ scrollTop: "0" }, 1000); 
 }
+
+function openHamburger(e) {
+    getElementsByClassName('navigation').toggleClass('nav_active')
+}
+
+function changeTab(e, type, key) {
+    let sideBar = document.querySelectorAll('.services_sidebar_item_list');
+    sideBar.forEach(elem => elem.classList.remove('open'));
+    sideBar.forEach(elem => {if(elem.dataset.type == type){ elem.classList.add('open') }})
+    let a = document.querySelectorAll('.services_main_info');
+    a.forEach(elem => elem.classList.remove('active'))
+    a.forEach(elem => {if(elem.dataset.type == type && elem.dataset.index == key){ elem.classList.add('active') }});
+    let title = document.querySelector('#services-page_main_title');
+    switch(type) {
+        case 'heat':
+            title.innerHTML = 'Монтаж отопления';
+            break;
+        case 'water':
+            title.innerHTML = 'Водоснабжение';
+            break;
+        case 'plumb':
+            title.innerHTML = 'Монтаж сантехники';
+            break;
+    };
+}
