@@ -1868,4 +1868,8 @@ input:focus, input:active, textarea:focus, textarea:active {
 .top_up_button:hover {
   box-shadow: -12px 0px 22px 0 rgba(0, 0, 0, 0.4);
 }
+
+.mt-8 {
+  margin-top: 8rem;
+}
 /*# sourceMappingURL=style.css.map */

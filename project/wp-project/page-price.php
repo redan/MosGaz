@@ -13,55 +13,33 @@ Template name: Наши цены
             </h3>
             <div class="prices_flex d-flex">
                 <div class="prices_tables">
-                    <div class="prices_main_info_table">
-                        <h4>Стоимость монтажа отопления</h3>
-                        <table class="services_page_table">
-                            <thead>
-                                <tr>
-                                    <th>Наименование работ</th>
-                                    <th>Ед.изм.</th>
-                                    <th>Стоимость</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Монтаж радиатора отопления (навес на стену)</td>
-                                    <td>шт.</td>
-                                    <td><b>1950 руб.</b></td>
-                                </tr>
-                                <tr>
-                                    <td>Монтаж нестандартных радиаторов: чугунные, Дизайн-радиаторы</td>
-                                    <td>шт.</td>
-                                    <td><b>от 3000 руб.</b></td>
-                                </tr>
-                                <tr>
-                                    <td>Монтаж внутрипольного конвектора отопления</td>
-                                    <td>шт.</td>
-                                    <td><b>2950 руб.</b></td>
-                                </tr>
-                                <tr>
-                                    <td>Монтаж распределительного коллектора отопления <br> (включая подключение трубопроводов, установку запорной арматуры)</td>
-                                    <td>шт.</td>
-                                    <td><b>5000 руб.</b></td>
-                                </tr>
-                                <tr>
-                                    <td>Монтаж труб системы отопления (металлопластик, сшитый полиэтилен) до Ø16-20 мм</td>
-                                    <td>м</td>
-                                    <td><b>85 руб.</b></td>
-                                </tr>
-                                <tr>
-                                    <td>Монтаж труб системы отопления (металлопластик, сшитый полиэтилен) Ø25-32 мм</td>
-                                    <td>м</td>
-                                    <td><b>255 руб.</b></td>
-                                </tr>
-                                <tr>
-                                    <td>Монтаж внутрипольного конвектора отопления</td>
-                                    <td>шт.</td>
-                                    <td><b>2950 руб.</b></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <button class="yellow">Заказать расчет</button>
+                    <?php $tablePriceLoop = CFS()->get('price_page_table'); ?>
+                        <?php foreach ($tablePriceLoop as $tablesLoop) { ?>
+                            <div class="prices_main_info_table">
+                                <h4><?= $tablesLoop['price_page_table_name'] ?></h3>
+                                <table class="services_page_table">
+                                    <thead>
+                                        <tr>
+                                            <th>Наименование работ</th>
+                                            <th>Ед.изм.</th>
+                                            <th>Стоимость</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php $tableLoop = $tablesLoop['price_page_table_inner'] ?>
+                                        <?php foreach ($tableLoop as $rowTd) { ?>
+                                            <tr>
+                                                <td><?= $rowTd['price_page_table_item_name'] ?></td>
+                                                <td><?= $rowTd['price_page_table_item_unit'] ?></td>
+                                                <td><b><?= $rowTd['price_page_table_item_price'] ?></b></td>
+                                            </tr>
+                                        <?php } ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                    <?php } ?>
+                    <div class="mt-8">
+                        <a class="link_btn yellow_on_white" href="#contact_modal" rel="modal:open">Заказать расчет</a>
                     </div>
                 </div>
                 <div class="prices_plans">

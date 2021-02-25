@@ -29,7 +29,7 @@
                     <a href="nashi-raboty">Наши работы</a>
                     <a href="nashi-ceny">Цены</a>
                     <a href="uslugi">Услуги</a>
-                    <a href="#">Рассчитать стоимость</a>
+                    <a href="rasschitat-stoimost">Рассчитать стоимость</a>
                     <a href="kontakty">Контакты</a>
                 </div>
                 <div class="tels">
