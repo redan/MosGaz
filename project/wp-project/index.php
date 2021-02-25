@@ -155,7 +155,7 @@ Template name: Главная
             <div class="prices_plans d-flex tabcontent" id="100">
                 <div class="prices_plan">
                     <h3>
-                    <?= CFS()->get('name_100_ec')?>
+                        <?= CFS()->get('name_100_ec')?>
                     </h3>
                     <div class="prices_plan_float topline">
                         <p><b>Монтажные работы</b></p>
@@ -170,7 +170,7 @@ Template name: Главная
                 </div>
                 <div class="prices_plan">
                     <h3>
-                    <?= CFS()->get('name_100_st')?>
+                        <?= CFS()->get('name_100_st')?>
                     </h3>
                     <div class="prices_plan_float topline">
                         <p><b>Монтажные работы</b></p>
@@ -202,7 +202,7 @@ Template name: Главная
             <div class="prices_plans d-flex tabcontent" id="200">
                 <div class="prices_plan">
                     <h3>
-                    <?= CFS()->get('name_200_ec')?>
+                        <?= CFS()->get('name_200_ec')?>
                     </h3>
                     <div class="prices_plan_float topline">
                         <p><b>Монтажные работы</b></p>
@@ -217,7 +217,7 @@ Template name: Главная
                 </div>
                 <div class="prices_plan">
                     <h3>
-                    <?= CFS()->get('name_200_st')?>
+                        <?= CFS()->get('name_200_st')?>
                     </h3>
                     <div class="prices_plan_float topline">
                         <p><b>Монтажные работы</b></p>
@@ -249,7 +249,7 @@ Template name: Главная
             <div class="prices_plans d-flex tabcontent" id="300">
                 <div class="prices_plan">
                     <h3>
-                    <?= CFS()->get('name_300_ec')?>
+                        <?= CFS()->get('name_300_ec')?>
                     </h3>
                     <div class="prices_plan_float topline">
                         <p><b>Монтажные работы</b></p>
@@ -264,7 +264,7 @@ Template name: Главная
                 </div>
                 <div class="prices_plan">
                     <h3>
-                    <?= CFS()->get('name_300_st')?>
+                        <?= CFS()->get('name_300_st')?>
                     </h3>
                     <div class="prices_plan_float topline">
                         <p><b>Монтажные работы</b></p>
