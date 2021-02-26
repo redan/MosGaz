@@ -1,7 +1,7 @@
     <footer class="footer">
         <div class="wrapper">
-            <div class="d-flex aline-base justify-sb">
-                <div class="footer_logo">
+            <div class="d-flex aline-base justify-sb footer_inner">
+                <div class="footer_logo footer_el">
                     <div class="logo">
                         <?php the_custom_logo() ?>
                         <!-- <a href="#"><img src="<?php echo bloginfo('template_url'); ?>/assets/img/Logo_black.png" alt="logo"></a> -->
@@ -10,17 +10,17 @@
                         <p>© 2021. All rights reserved. </p>
                     </div>
                 </div>
-                <div class="tels footer_tels">
+                <div class="tels footer_tels footer_el">
                     <a href="tel:<?= CFS()->get('tel_number_1'); ?>"><?= CFS()->get('tel_number_1'); ?></a>
                     <a href="tel:<?= CFS()->get('tel_number_2'); ?>"><?= CFS()->get('tel_number_2'); ?></a>
                     <a href="#contact_modal" rel="modal:open" class="color_link">обратный звонок</a>
                 </div>
-                <div class="adress">
+                <div class="adress footer_el">
                     <p class="adress_title"><b>123456, г. Москва</b></p>
                     <p><?= CFS()->get('adress'); ?></p>
                     <a href="mailto:<?= CFS()->get('e_mail'); ?>"><?= CFS()->get('e_mail'); ?></a>
                 </div>
-                <div class="schedule">
+                <div class="schedule footer_el">
                     <p>
                         Работаем ежедневно с <b><?= CFS()->get('work_time'); ?></b><br> Воскресенье - выходной
                     </p>

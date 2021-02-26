@@ -47,6 +47,17 @@ jQuery(document).ready(function () {
             mybutton.style.display = "none";
         }
     }
+
+    jQuery('.burger').click(function (e) {
+        jQuery(this).toggleClass('burger_active');
+        jQuery('.burger-menu__wrap').toggleClass('burger-menu__wrap_active');
+    });
+
+
+    jQuery('.burger-menu__link').click(function (e) {
+        jQuery('.burger').removeClass('burger_active');
+        jQuery('.burger-menu__wrap').removeClass('burger-menu__wrap_active');
+    });
 })
 
 function ChangePhoto(e, i){

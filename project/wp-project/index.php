@@ -48,6 +48,40 @@ Template name: Главная
                     <a href="tel:<?= CFS()->get('tel_number_2'); ?>"><?= CFS()->get('tel_number_2'); ?></a>
                     <a href="#contact_modal" rel="modal:open" class="color_link">обратный звонок</a>
                 </div>
+                <!-- burger menu -->
+                <div class="bg_container">
+                    <div class="menu-toggle burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div id="menu" class="burger-menu__wrap">
+                    <div class="burger-menu__cont wrapper">
+                        <ul class="burger-menu">
+                            <li class="burger__link">
+                                <a href="nashi-raboty">Наши работы</a>
+                            </li>
+                            <li class="burger__link">
+                                <a href="nashi-ceny">Цены</a>
+                            </li>
+                            <li class="burger__link">
+                                <a href="uslugi">Услуги</a>
+                            </li>
+                            <li class="burger__link">
+                                <a href="rasschitat-stoimost">Рассчитать стоимость</a>
+                            </li>
+                            <li class="burger__link">
+                                <a href="kontakty">Контакты</a>
+                            </li>
+                            <li class="burger__link">
+                                <a href="tel:<?= CFS()->get('tel_number_1'); ?>"><?= CFS()->get('tel_number_1'); ?></a>
+                                <a href="tel:<?= CFS()->get('tel_number_2'); ?>"><?= CFS()->get('tel_number_2'); ?></a>
+                                <a href="#contact_modal" rel="modal:open" class="color_link">обратный звонок</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="promo">
@@ -62,17 +96,13 @@ Template name: Главная
                 <div class="promo_info current">
                     <h1><?= $loop['slider_index_text_main'] ?></h1>
                     <p class="topline"> <?= $loop['slider_index_text'] ?></p>
-                    <!-- <h1>Монтаж отопления частного дома <br> под «ключ». Москва и МО.</h1>
-                    <p class="topline">Теплые полы. Водоснабжение. Сантехника.</p> -->
-                    <button class="colored">Рассчитать стоимость</button>
+                    <a class="link_btn colored" href="#contact_modal" rel="modal:open">Рассчитать стоимость</a>
                 </div>
                 <?php } else { ?>
                 <div class="promo_info">
                     <h1><?= $loop['slider_index_text_main'] ?></h1>
                     <p class="topline"> <?= $loop['slider_index_text'] ?></p>
-                    <!-- <h1>Монтаж отопления частного дома <br> под «ключ». Москва и МО.12</h1> -->
-                    <!-- <p class="topline">Теплые полы. Водоснабжение. Сантехника.12</p> -->
-                    <button class="colored">Рассчитать стоимость</button>
+                    <a class="link_btn colored" href="#contact_modal" rel="modal:open">Рассчитать стоимость</a>
                 </div>
                 <?php }} ?>
             </div>
@@ -327,7 +357,7 @@ Template name: Главная
             <a class="link_btn colored" href="#contact_modal" rel="modal:open">Оставить заявку</a>
         </div>
         <div class="services_link">
-            <a href="#" class="services_allServices">Все услуги</a>
+            <a href="uslugi" class="services_allServices">Все услуги</a>
         </div>
     </section>
     <section class="form">
@@ -388,6 +418,11 @@ Template name: Главная
             }
         })
     </script>
+    <style>
+        .header_fixer.sticky span {
+            background: #000000;
+        }
+    </style>
 <?php 
     get_footer();
 ?>
