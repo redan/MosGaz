@@ -17,6 +17,10 @@ Template name: Услуги
             </div>
         </div>
         <div class="services_main wrapper d-flex">
+            <div class="sidebar_open">
+                <i class="fas fa-angle-left fa-3x"></i>
+                <p>Список услуг</p>
+            </div>
             <div class="services_main_sidebar">
                 <?php $heat_loop = CFS()->get('heat_mount'); ?>
                 <div class="services_sidebar_item active" data-type="heat" onclick="changeTab(event, 'heat', 0)">

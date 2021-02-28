@@ -37,6 +37,40 @@
                     <a href="tel:+7(499)0000000">+7(499)0000000</a>
                     <a href="#contact_modal" rel="modal:open" class="color_link">обратный звонок</a>
                 </div>
+                <!-- burger menu -->
+                <div class="bg_container">
+                    <div class="menu-toggle burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div id="menu" class="burger-menu__wrap">
+                    <div class="burger-menu__cont wrapper">
+                        <ul class="burger-menu">
+                            <li class="burger__link">
+                                <a href="nashi-raboty">Наши работы</a>
+                            </li>
+                            <li class="burger__link">
+                                <a href="nashi-ceny">Цены</a>
+                            </li>
+                            <li class="burger__link">
+                                <a href="uslugi">Услуги</a>
+                            </li>
+                            <li class="burger__link">
+                                <a href="rasschitat-stoimost">Рассчитать стоимость</a>
+                            </li>
+                            <li class="burger__link">
+                                <a href="kontakty">Контакты</a>
+                            </li>
+                            <li class="burger__link">
+                                <a href="tel:<?= CFS()->get('tel_number_1'); ?>"><?= CFS()->get('tel_number_1'); ?></a>
+                                <a href="tel:<?= CFS()->get('tel_number_2'); ?>"><?= CFS()->get('tel_number_2'); ?></a>
+                                <a href="#contact_modal" rel="modal:open" class="color_link">обратный звонок</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>

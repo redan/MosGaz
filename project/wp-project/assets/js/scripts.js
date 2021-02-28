@@ -25,16 +25,23 @@ jQuery(document).ready(function () {
         jQuery('.promo_info[data-slick-index="' + nextSlideNum + '"]').addClass('current');
     });
 
-
-    // jQuery(window).scroll(function () {
-    //     if (jQuery(window).scrollTop() > 60) {
-    //         jQuery('.header_fixer').addClass("sticky");
-    //         logo.src = logo.src.replace(/Logo.png/i, 'Logo_black.png');
-    //     } else {
-    //         jQuery('.header_fixer').removeClass("sticky");
-    //         logo.src = logo.src.replace(/Logo_black.png/i, 'Logo.png');
-    //     }
-    // })
+    jQuery('.steps_thumbnails').slick({
+        responsive: [
+            {
+                breakpoint: 6000,
+                settings: 'unslick',
+              },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+              }
+            },
+        ]
+    })
 
     mybutton = document.getElementById("top_btn");
 
@@ -58,6 +65,18 @@ jQuery(document).ready(function () {
         jQuery('.burger').removeClass('burger_active');
         jQuery('.burger-menu__wrap').removeClass('burger-menu__wrap_active');
     });
+
+    jQuery(window).scroll(function () {
+        if (jQuery(window).scrollTop() > 60) {
+            jQuery('.header_fix-page').addClass("sticky");
+        } else {
+            jQuery('.header_fix-page').removeClass("sticky");
+        }
+    })
+
+    jQuery('.sidebar_open').click(function (e) {
+        jQuery(".services_main_sidebar").toggleClass('opened');
+    })
 })
 
 function ChangePhoto(e, i){

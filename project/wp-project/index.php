@@ -51,9 +51,9 @@ Template name: Главная
                 <!-- burger menu -->
                 <div class="bg_container">
                     <div class="menu-toggle burger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                        <span class="in_index_page"></span>
+                        <span class="in_index_page"></span>
+                        <span class="in_index_page"></span>
                     </div>
                 </div>
                 <div id="menu" class="burger-menu__wrap">

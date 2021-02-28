@@ -129,7 +129,7 @@ h2 {
 
 @media only screen and (max-width: 599px) {
   h2 {
-    font-size: 1.25em;
+    font-size: 1.5em;
   }
 }
 
@@ -147,7 +147,7 @@ h3 {
 @media only screen and (max-width: 599px) {
   h3 {
     font-weight: 900;
-    font-size: 1em;
+    font-size: 2em;
   }
 }
 
@@ -177,6 +177,8 @@ button {
 }
 
 .link_btn {
+  display: block;
+  width: fit-content;
   font-size: 2rem;
   padding: 2.5rem 4rem;
   cursor: pointer;
@@ -1646,12 +1648,13 @@ input:focus, input:active, textarea:focus, textarea:active {
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
-.header_fixer.sticky {
+.sticky {
   position: fixed;
   width: 100%;
   background-color: white;
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.52);
   z-index: 1;
+  top: 0;
 }
 
 .header_fixer.sticky a {
@@ -1732,10 +1735,27 @@ input:focus, input:active, textarea:focus, textarea:active {
 .bg_container {
   position: absolute;
   top: 0;
-  z-index: 202;
+  z-index: 10;
 }
 
+.menu-toggle {
+  z-index: 10;
+  width: 24px;
+  position: relative;
+  display: none;
+  cursor: pointer;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+/* Mobile < 900px */
 @media only screen and (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
   .bg_container {
     right: 3rem;
     top: 4.5rem;
@@ -1743,15 +1763,11 @@ input:focus, input:active, textarea:focus, textarea:active {
 
   .burger-menu a {
     color: black;
-    font-weight: 600;
+    font-weight: 800;
   }
 
   .burger-menu .color_link {
     color: #47AAFB;
-  }
-
-  .menu-toggle.burger_active span {
-    background: #000000;
   }
 
   .header_block  .navigation {
@@ -1771,8 +1787,8 @@ input:focus, input:active, textarea:focus, textarea:active {
   }
 
   .header_img .promo_sl {
-    background-size: unset;
-    background: center;
+    background-size: cover;
+    background-position: 50% 0;
   }
 
   .prices .prices_plans {
@@ -1801,7 +1817,7 @@ input:focus, input:active, textarea:focus, textarea:active {
   }
 
   .wpcf7-form-control-wrap input {
-    width: 100%;
+    width: 100% !important;
   }
 
   .form form .left_form .form_actions .form_wrapper {
@@ -1856,38 +1872,302 @@ input:focus, input:active, textarea:focus, textarea:active {
   .footer_inner .schedule {
     text-align: end;
   }
-}
 
-@media only screen and (max-width: 599px) {
-  .bg_container {
-    margin-left: 1em;
-    padding-top: 23px;
-    position: fixed;
+  .modal {
+    margin-top: 5rem;
+    z-index: 20;
+  }
+
+  .modal .modal_form .wpcf7 form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal .modal_form .modal_form_inputs {
+    width: 70%;
+    margin: 3rem auto;
+  }
+
+  .modal .modal_form .modal_form_inputs input {
+    width: 100%;
+  }
+
+  .modal .modal_inner {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 4.5rem 3rem;
+  }
+
+  .modal .modal_inner_pics {
+    width: 100%;
+    margin: 0;
+  }
+
+  .modal .modal_inner_pics .modal_inner_pic img {
+    width: -webkit-fill-available;
+  }
+
+  .modal .modal_inner_text {
+    width: 100%;
+  }
+
+  .prices_page .prices_flex {
+    flex-direction: column;
+  }
+
+  .prices_page .prices_plans {
+    margin-top: 10rem;
+    padding: 3.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .prices_page .prices_plans .prices_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .prices_page .prices_plans .wrapper {
+    padding-bottom: 0;
+  }
+
+  .prices_page .prices_plans .prices_plan .prices_plan_float {
+    max-width: 100%;
+  }
+
+  .contacts_info  {
+    flex-direction: column;
+  }
+
+  .services_page .services_main_info_first {
+    flex-direction: column-reverse;
+  }
+  
+  .services_page .services_main_info_table {
+    padding-bottom: 5rem;
   }
 }
+/* Mobile < 900px END */
 
-.menu-toggle {
-  z-index: 202;
-  width: 24px;
-  position: relative;
+.sidebar_open {
   display: none;
-  cursor: pointer;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
 }
 
-@media only screen and (max-width: 900px) {
-  .menu-toggle {
-    display: block;
-  }
-}
-
+/* Mobile < 599px */
 @media only screen and (max-width: 599px) {
   .menu-toggle {
     margin-left: 0;
   }
+
+  .bg_container {
+    right: 0rem;
+    top: 7.5rem;
+  }
+
+  .header_block .tels  {
+    display: none;
+  }
+  
+  .promo .left_arrow {
+    left: 1em;
+  }
+
+  .promo .rigth_arrow  {
+    right: 1em;
+  }
+
+  .top_up_button {
+    height: 10rem;
+    width: 10rem;
+    bottom: 5rem;
+    right: 2rem;
+  }
+
+  .arrow-left {
+    top: 49px;
+    left: 85px;
+  }
+  
+  .prices .prices_title .prices_title_area {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .prices .prices_title .prices_title_area p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .prices .topline_white {
+    margin-top: 2rem;
+  }
+
+  .prices .prices_plans {
+    margin-top: 0;
+    margin-bottom: 3.5rem;
+  }
+
+  .prices .topline_white {
+    padding-bottom: 4.5rem;
+  }
+
+  .services .services_inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services .services_inner .services_item  {
+    margin-bottom: 5rem;
+  }
+
+  .form {
+    background: url(assets/img/Big_logo1.png) no-repeat 1rem 5rem;
+    background-size: 100%;
+    padding-bottom: 5rem;
+  }
+
+  .form form {
+    flex-direction: column;
+  }
+
+  .form form .left_form {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .form form .rigth_form {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .form form .rigth_form::before {
+    display: none;
+  }
+
+  .form form .left_form .form_actions .form_wrapper {
+    padding: 0;
+  }
+  .form form .rigth_form .rigth_deg {
+    right: -9.5rem;
+  }
+
+  .footer_el {
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 4rem;
+  }
+
+  .footer_inner {
+    flex-direction: column;
+  }
+
+  .footer_inner .schedule {
+    text-align: start;
+  }
+
+  .modal .modal_form .modal_form_inputs {
+    width: 100%;
+  }
+
+  .modal .modal_form button {
+    padding: 1.5rem 8rem;
+  }
+  
+  .m-none {
+    display: none;
+  }
+
+  .modal .modal_inner_pics .modal_inner_pic img {
+    width: 100%;
+  }
+
+  .modal .modal_inner_pics .modal_inner_pics_min img {
+    margin-bottom: 1rem;
+  }
+
+  .services_page_table tbody tr td:first-of-type {
+    padding-left: 1rem !important;
+    width: 190px;
+  }
+
+  .services_page_table thead tr th:first-of-type {
+    padding-left: 1rem !important;
+    width: 190px;
+  }
+
+  .services_page_table {
+    display: block;
+  }
+
+  .services_page_table thead {
+    display: block;
+    border-radius: 0.3rem !important;
+  }
+
+  .services_page_table tbody {
+    display: block;
+  }
+
+  .services_page {
+    padding-top: 5rem;
+  }
+
+  .services_page .services_title_sidebar {
+    margin-top: 0;
+  }
+
+  .services_page .services_title {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .services_page .services_title_main {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: inherit;
+  }
+
+  .services_page .services_title_main .link_btn.yellow_on_white {
+    margin-top: 3rem;
+  }
+
+  .sidebar_open {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+  }
+
+  .services_page .services_main_sidebar {
+    display: none;
+    box-sizing: border-box;
+    -ms-flex-preferred-size: unset;
+    flex-basis: unset;
+  }
+
+  .services_page .services_main_sidebar.opened {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .services_page .services_main {
+    flex-direction: column;
+  }
+
+  .services_page .services_main {
+    margin-top: 1.7rem;
+  }
+}
+/* Mobile < 599px END */
+
+.menu-toggle span.in_index_page {
+  background: #ffffff;
+}
+
+.menu-toggle.burger_active span {
+  background: #000000;
 }
 
 .menu-toggle span {
@@ -1895,7 +2175,7 @@ input:focus, input:active, textarea:focus, textarea:active {
   position: absolute;
   height: 2.7px;
   width: 100%;
-  background: #ffffff;
+  background: #000000;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -1943,7 +2223,7 @@ input:focus, input:active, textarea:focus, textarea:active {
   left: -100%;
   width: 100%;
   height: 100%;
-  z-index: 105;
+  z-index: 9;
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
   background: #ffffff;
